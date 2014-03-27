@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */; };
+		A06A7E6418E40D9C0039BB1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */; };
+		A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A7E6C18E412520039BB1B /* RevealPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A06A7E5A18E40D9C0039BB1B /* RevealPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevealPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A06A7E6118E40D9C0039BB1B /* RevealPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevealPlugin-Info.plist"; sourceTree = "<group>"; };
+		A06A7E6318E40D9C0039BB1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevealPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		A06A7E6B18E412520039BB1B /* RevealPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealPlugin.h; sourceTree = "<group>"; };
+		A06A7E6C18E412520039BB1B /* RevealPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealPlugin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A06A7E5718E40D9C0039BB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A06A7E5118E40D9C0039BB1B = {
+			isa = PBXGroup;
+			children = (
+				A06A7E5F18E40D9C0039BB1B /* RevealPlugin */,
+				A06A7E5C18E40D9C0039BB1B /* Frameworks */,
+				A06A7E5B18E40D9C0039BB1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A06A7E5B18E40D9C0039BB1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A06A7E5A18E40D9C0039BB1B /* RevealPlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A06A7E5C18E40D9C0039BB1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A06A7E5F18E40D9C0039BB1B /* RevealPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				A06A7E6B18E412520039BB1B /* RevealPlugin.h */,
+				A06A7E6C18E412520039BB1B /* RevealPlugin.m */,
+				A06A7E6018E40D9C0039BB1B /* Supporting Files */,
+			);
+			path = RevealPlugin;
+			sourceTree = "<group>";
+		};
+		A06A7E6018E40D9C0039BB1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A06A7E6118E40D9C0039BB1B /* RevealPlugin-Info.plist */,
+				A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */,
+				A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A06A7E5918E40D9C0039BB1B /* RevealPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06A7E6818E40D9C0039BB1B /* Build configuration list for PBXNativeTarget "RevealPlugin" */;
+			buildPhases = (
+				A06A7E5618E40D9C0039BB1B /* Sources */,
+				A06A7E5718E40D9C0039BB1B /* Frameworks */,
+				A06A7E5818E40D9C0039BB1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevealPlugin;
+			productName = RevealPlugin;
+			productReference = A06A7E5A18E40D9C0039BB1B /* RevealPlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A06A7E5218E40D9C0039BB1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Saick;
+			};
+			buildConfigurationList = A06A7E5518E40D9C0039BB1B /* Build configuration list for PBXProject "RevealPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A06A7E5118E40D9C0039BB1B;
+			productRefGroup = A06A7E5B18E40D9C0039BB1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A06A7E5918E40D9C0039BB1B /* RevealPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A06A7E5818E40D9C0039BB1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06A7E6418E40D9C0039BB1B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A06A7E5618E40D9C0039BB1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06A7E6318E40D9C0039BB1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A06A7E6618E40D9C0039BB1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A06A7E6718E40D9C0039BB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A06A7E6918E40D9C0039BB1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RevealPlugin/RevealPlugin-Prefix.pch";
+				INFOPLIST_FILE = "RevealPlugin/RevealPlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		A06A7E6A18E40D9C0039BB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RevealPlugin/RevealPlugin-Prefix.pch";
+				INFOPLIST_FILE = "RevealPlugin/RevealPlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A06A7E5518E40D9C0039BB1B /* Build configuration list for PBXProject "RevealPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06A7E6618E40D9C0039BB1B /* Debug */,
+				A06A7E6718E40D9C0039BB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06A7E6818E40D9C0039BB1B /* Build configuration list for PBXNativeTarget "RevealPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06A7E6918E40D9C0039BB1B /* Debug */,
+				A06A7E6A18E40D9C0039BB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A06A7E5218E40D9C0039BB1B /* Project object */;
+}
