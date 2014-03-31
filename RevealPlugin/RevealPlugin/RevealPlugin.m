@@ -7,6 +7,8 @@
 //
 
 #import "RevealPlugin.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @implementation RevealPlugin
 
@@ -39,6 +41,11 @@
                                              selector:@selector(applicationDidFinishLaunching:)
                                                  name:NSApplicationDidFinishLaunchingNotification
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(observeAllNotification:)
+                                                 name:nil
+                                               object:nil];
   }
   return self;
 }
@@ -47,37 +54,77 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notif
 {
-  [[NSNotificationCenter defaultCenter] addObserver:self
-                                           selector:@selector(selectionDidChange:)
-                                               name:NSTextViewDidChangeSelectionNotification
-                                             object:nil];
+//  [[NSNotificationCenter defaultCenter] addObserver:self
+//                                           selector:@selector(selectionDidChange:)
+//                                               name:NSTextViewDidChangeSelectionNotification
+//                                             object:nil];
   
   NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
   if (productMenuItem) {
     NSMenu *menu = [productMenuItem submenu];
-    NSMenuItem *stopItem = [productMenuItem.submenu itemWithTitle:@"Stop"];
-    NSInteger revealIndex = [menu indexOfItem:stopItem] + 1;
+    NSMenuItem *analyzeItem = [productMenuItem.submenu itemWithTitle:@"Analyze"];
+    NSInteger revealIndex = [menu indexOfItem:analyzeItem] + 1;
     
 //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
     NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
-                                                        action:@selector(didPressRevealInspectMenu:)
+                                                        action:@selector(didPressRevealInspectProductMenu:)
                                                  keyEquivalent:@""];
     [revealItem setTarget:self];
     [revealItem setKeyEquivalentModifierMask:NSAlternateKeyMask];
     [[productMenuItem submenu] insertItem:revealItem atIndex:revealIndex];
   }
+  
+  NSMenuItem *debugMenuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
+  if (debugMenuItem) {
+    //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
+                                                        action:@selector(didPressRevealInspectDebugMenu:)
+                                                 keyEquivalent:@""];
+    [revealItem setTarget:self];
+    [revealItem setKeyEquivalentModifierMask:NSAlternateKeyMask];
+    [[debugMenuItem submenu] addItem:revealItem];
+  }
 }
 
-- (void)selectionDidChange:(NSNotification *)notif
+- (void)observeAllNotification:(NSNotification *)notif
 {
-  NSLog(@"Reveal selectionDidChange:%@", notif);
+  NSLog(@"Notification:%@", notif.name);
 }
+
+//- (void)selectionDidChange:(NSNotification *)notif
+//{
+//  NSLog(@"Reveal selectionDidChange:%@", notif);
+//}
 
 #pragma mark - actions
 
-- (void)didPressRevealInspectMenu:(NSMenuItem *)sender
+/*!
+ @brief click Reveal Inspect Menu Action
+ 
+ // 0 step is only used for debug
+ // 0. User already run the project (otherwise, alert an error)
+ 1. enter `lldb`, and sttach process (if error occured, process not found)
+ 2. lldb operation pause and other command
+ */
+- (void)didPressRevealInspectProductMenu:(NSMenuItem *)sender
 {
-  NSLog(@"Reveal didPressRevealInspectMenu:%@", sender);
+  NSLog(@"Reveal didPressRevealInspectProductMenu:%@", sender);
+  
+  NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
+  if (productMenuItem) {
+    NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
+    
+    NSLog(@"%@ target:%@ selector:%@", runItem, runItem.target, NSStringFromSelector(runItem.action));
+    
+    objc_msgSend(runItem.target, runItem.action);
+//    [runItem.target performSelectorOnMainThread:runItem.action withObject:runItem waitUntilDone:NO];
+  }
+}
+
+- (void)didPressRevealInspectDebugMenu:(NSMenuItem *)sender
+{
+  NSLog(@"Reveal didPressRevealInspectDebugMenu:%@", sender);
+  
 }
 
 @end
