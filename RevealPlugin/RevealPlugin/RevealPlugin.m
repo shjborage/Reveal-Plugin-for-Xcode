@@ -68,9 +68,9 @@
 //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
     NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
                                                         action:@selector(didPressRevealInspectProductMenu:)
-                                                 keyEquivalent:@""];
+                                                 keyEquivalent:@"p"];
     [revealItem setTarget:self];
-    [revealItem setKeyEquivalentModifierMask:NSAlternateKeyMask];
+    [revealItem setKeyEquivalentModifierMask:NSControlKeyMask|NSCommandKeyMask];
     [[productMenuItem submenu] insertItem:revealItem atIndex:revealIndex];
   }
   
@@ -79,9 +79,9 @@
     //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
     NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
                                                         action:@selector(didPressRevealInspectDebugMenu:)
-                                                 keyEquivalent:@""];
+                                                 keyEquivalent:@";"];
     [revealItem setTarget:self];
-    [revealItem setKeyEquivalentModifierMask:NSAlternateKeyMask];
+    [revealItem setKeyEquivalentModifierMask:NSControlKeyMask|NSCommandKeyMask];
     [[debugMenuItem submenu] addItem:revealItem];
   }
 }
