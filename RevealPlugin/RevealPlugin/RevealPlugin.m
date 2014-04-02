@@ -27,52 +27,52 @@
 + (id)shared
 {
   static dispatch_once_t onceToken;
-  static id instance = nil;
-  dispatch_once(&onceToken, ^{
-    instance = [[self alloc] init];
-  });
-  return instance;
+    static id instance = nil;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
 }
 
 - (id)init
 {
-  if (self = [super init]) {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationDidFinishLaunching:)
-                                                 name:NSApplicationDidFinishLaunchingNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(observeAllNotification:)
-                                                 name:nil
-                                               object:nil];
-  }
-  return self;
+    if (self = [super init]) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(applicationDidFinishLaunching:)
+                                                     name:NSApplicationDidFinishLaunchingNotification
+                                                   object:nil];
+
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(observeAllNotification:)
+//                                                 name:nil
+//                                               object:nil];
+    }
+    return self;
 }
 
 #pragma mark - notif
 
-- (void)applicationDidFinishLaunching:(NSNotification *)notif
+- (void)applicationDidFinishLaunchotification *)notif
 {
 //  [[NSNotificationCenter defaultCenter] addObserver:self
 //                                           selector:@selector(selectionDidChange:)
 //                                               name:NSTextViewDidChangeSelectionNotification
 //                                             object:nil];
-  
-  NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
-  if (productMenuItem) {
-    NSMenu *menu = [productMenuItem submenu];
-    NSMenuItem *analyzeItem = [productMenuItem.submenu itemWithTitle:@"Analyze"];
-    NSInteger revealIndex = [menu indexOfItem:analyzeItem] + 1;
-    
+
+    NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
+    if (productMenuItem) {
+        NSMenu *menu = [productMenuItem submenu];
+        NSMenuItem *analyzeItem = [productMenuItem.submenu itemWithTitle:@"Analyze"];
+        NSInteger revealIndex = [menu indexOfItem:analyzeItem] + 1;
+
 //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
-    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
-                                                        action:@selector(didPressRevealInspectProductMenu:)
-                                                 keyEquivalent:@"p"];
-    [revealItem setTarget:self];
-    [revealItem setKeyEquivalentModifierMask:NSControlKeyMask|NSCommandKeyMask];
-    [[productMenuItem submenu] insertItem:revealItem atIndex:revealIndex];
-  }
+        NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
+                                                            action:@selector(didPressRevealInspectProductMenu:)
+                                                     keyEquivalent:@"p"];
+        [revealItem setTarget:self];
+        [revealItem setKeyEquivalentModifierMask:NSControlKeyMask|NSCommandKeyMask];
+        [[productMenuItem submenu] insertItem:revealItem atIndex:revealIndex];
+    }ing:(NSN
   
   NSMenuItem *debugMenuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
   if (debugMenuItem) {
