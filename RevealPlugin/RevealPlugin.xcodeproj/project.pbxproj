@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A01CEA8518EC0F90006A55BC /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = A01CEA8318EC0F90006A55BC /* JRSwizzle.m */; };
-		A01CEA8618EC0F90006A55BC /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = A01CEA8418EC0F90006A55BC /* README.markdown */; };
 		A01CEA9218EC19CB006A55BC /* IDEBuildTask+RPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A01CEA9118EC19CB006A55BC /* IDEBuildTask+RPPlugin.m */; };
 		A01CEC6D18EC1E75006A55BC /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01CEA8E18EC1915006A55BC /* IDEFoundation.framework */; };
 		A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		A01CEA8218EC0F90006A55BC /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		A01CEA8318EC0F90006A55BC /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
-		A01CEA8418EC0F90006A55BC /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		A01CEA8E18EC1915006A55BC /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = RevealPlugin/Plugins/IDEFoundation.framework; sourceTree = "<group>"; };
 		A01CEA9018EC19CB006A55BC /* IDEBuildTask+RPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEBuildTask+RPPlugin.h"; sourceTree = "<group>"; };
 		A01CEA9118EC19CB006A55BC /* IDEBuildTask+RPPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEBuildTask+RPPlugin.m"; sourceTree = "<group>"; };
@@ -531,7 +529,6 @@
 			children = (
 				A01CEA8218EC0F90006A55BC /* JRSwizzle.h */,
 				A01CEA8318EC0F90006A55BC /* JRSwizzle.m */,
-				A01CEA8418EC0F90006A55BC /* README.markdown */,
 			);
 			path = jrswizzle;
 			sourceTree = "<group>";
@@ -1126,7 +1123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01CEA8618EC0F90006A55BC /* README.markdown in Resources */,
 				A06A7E6418E40D9C0039BB1B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
