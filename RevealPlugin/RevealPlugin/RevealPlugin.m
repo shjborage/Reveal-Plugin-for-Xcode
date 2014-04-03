@@ -52,7 +52,7 @@
 
 #pragma mark - notif
 
-- (void)applicationDidFinishLauning:(NSNotification *)notif
+- (void)applicationDidFinishLaunching:(NSNotification *)notif
 {
 //  [[NSNotificationCenter defaultCenter] addObserver:self
 //                                           selector:@selector(selectionDidChange:)
@@ -103,7 +103,7 @@
  
  // 0 step is only used for debug
  // 0. User already run the project (otherwise, alert an error)
- 1. enter `lldb`, and sttach process (if error occured, process not found)
+ 1. enter `lldb`, and attach process (if error occured, process not found)
  2. lldb operation pause and other command
  */
 - (void)didPressRevealInspectProductMenu:(NSMenuItem *)sender
