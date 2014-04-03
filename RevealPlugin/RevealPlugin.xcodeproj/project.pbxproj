@@ -501,6 +501,7 @@
 		A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevealPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		A06A7E6B18E412520039BB1B /* RevealPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealPlugin.h; sourceTree = "<group>"; };
 		A06A7E6C18E412520039BB1B /* RevealPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealPlugin.m; sourceTree = "<group>"; };
+		A0FDABD518ED53A60073873B /* BuildScriptHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BuildScriptHeader.h; path = Resources/BuildScriptHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1052,6 +1053,7 @@
 		A06A7E5F18E40D9C0039BB1B /* RevealPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				A0FDABD518ED53A60073873B /* BuildScriptHeader.h */,
 				A06A7E6B18E412520039BB1B /* RevealPlugin.h */,
 				A06A7E6C18E412520039BB1B /* RevealPlugin.m */,
 				A01CEA8A18EC16F4006A55BC /* Plugins */,

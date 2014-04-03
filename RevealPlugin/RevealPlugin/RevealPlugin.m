@@ -9,6 +9,7 @@
 #import "RevealPlugin.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "BuildScriptHeader.h"
 
 @implementation RevealPlugin
 
@@ -77,7 +78,7 @@
   NSMenuItem *debugMenuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
   if (debugMenuItem) {
     //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
-    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
+    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Attach to RevealApp"
                                                         action:@selector(didPressRevealInspectDebugMenu:)
                                                  keyEquivalent:@";"];
     [revealItem setTarget:self];
@@ -110,20 +111,35 @@
 {
   NSLog(@"Reveal didPressRevealInspectProductMenu:%@", sender);
 
-  NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
-  if (productMenuItem) {
-    NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
+//  NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
+//  if (productMenuItem) {
+//    NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
+//
+//    NSLog(@"%@ target:%@ selector:%@", runItem, runItem.target, NSStringFromSelector(runItem.action));
+//
+//    objc_msgSend(runItem.target, runItem.action);
+  ////    [runItem.target performSelectorOnMainThread:runItem.action withObject:runItem waitUntilDone:NO];
+  //  }
+  
+  // start applescript
+  NSString *scriptPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"rp.script"];
+//  if (![[NSFileManager defaultManager] fileExistsAtPath:scriptPath]) {
+    [kScriptBuild writeToFile:scriptPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+//  }
+  
+  if ([scriptPath length] == 0)
+    return;
 
-    NSLog(@"%@ target:%@ selector:%@", runItem, runItem.target, NSStringFromSelector(runItem.action));
+  NSURL *scriptURL = [NSURL fileURLWithPath:scriptPath];
 
-    objc_msgSend(runItem.target, runItem.action);
-//    [runItem.target performSelectorOnMainThread:runItem.action withObject:runItem waitUntilDone:NO];
-  }
+  NSAppleScript *as = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL
+                                                             error:nil];
+  [as executeAndReturnError: NULL];
 }
 
 - (void)didPressRevealInspectDebugMenu:(NSMenuItem *)sender
 {
-  NSLog(@"Reveal didPressRevealInspectDebugMenu:%@", sender);
+  NSLog(@"Reveal didPressRevealInspectDebugMenu(Attach to RevealApp):%@", sender);
 
 }
 
