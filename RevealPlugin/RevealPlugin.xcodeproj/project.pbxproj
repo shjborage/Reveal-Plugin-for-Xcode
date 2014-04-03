@@ -7,493 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A01CEA8518EC0F90006A55BC /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = A01CEA8318EC0F90006A55BC /* JRSwizzle.m */; };
-		A01CEA9218EC19CB006A55BC /* IDEBuildTask+RPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A01CEA9118EC19CB006A55BC /* IDEBuildTask+RPPlugin.m */; };
-		A01CEC6D18EC1E75006A55BC /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01CEA8E18EC1915006A55BC /* IDEFoundation.framework */; };
 		A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */; };
 		A06A7E6418E40D9C0039BB1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */; };
 		A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A7E6C18E412520039BB1B /* RevealPlugin.m */; };
+		B488BB64504A4B39931AFE54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC3B54C1C4664BF51AC76 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A01CEA8218EC0F90006A55BC /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
-		A01CEA8318EC0F90006A55BC /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
-		A01CEA8E18EC1915006A55BC /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = RevealPlugin/Plugins/IDEFoundation.framework; sourceTree = "<group>"; };
-		A01CEA9018EC19CB006A55BC /* IDEBuildTask+RPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEBuildTask+RPPlugin.h"; sourceTree = "<group>"; };
-		A01CEA9118EC19CB006A55BC /* IDEBuildTask+RPPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEBuildTask+RPPlugin.m"; sourceTree = "<group>"; };
-		A01CEA9418EC1CB7006A55BC /* _DVTAsynchronousRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTAsynchronousRequest.h; sourceTree = "<group>"; };
-		A01CEA9518EC1CB7006A55BC /* _DVTCancellationBlockToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTCancellationBlockToken.h; sourceTree = "<group>"; };
-		A01CEA9618EC1CB7006A55BC /* _DVTDeallocationMonitorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTDeallocationMonitorInfo.h; sourceTree = "<group>"; };
-		A01CEA9718EC1CB7006A55BC /* _DVTDeviceLocatorTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTDeviceLocatorTracker.h; sourceTree = "<group>"; };
-		A01CEA9818EC1CB7006A55BC /* _DVTDiffHashingDictionaryDiffHashContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTDiffHashingDictionaryDiffHashContext.h; sourceTree = "<group>"; };
-		A01CEA9918EC1CB7006A55BC /* _DVTDiffLineDataSourceConsistentCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTDiffLineDataSourceConsistentCopy.h; sourceTree = "<group>"; };
-		A01CEA9A18EC1CB7006A55BC /* _DVTDisallowFinishToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTDisallowFinishToken.h; sourceTree = "<group>"; };
-		A01CEA9B18EC1CB7006A55BC /* _DVTErrorRecoveryHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTErrorRecoveryHandler.h; sourceTree = "<group>"; };
-		A01CEA9C18EC1CB7006A55BC /* _DVTFilePathAssoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTFilePathAssoc.h; sourceTree = "<group>"; };
-		A01CEA9D18EC1CB7006A55BC /* _DVTFoundationPrivateClassForFindingBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTFoundationPrivateClassForFindingBundle.h; sourceTree = "<group>"; };
-		A01CEA9E18EC1CB7006A55BC /* _DVTWeakInterposerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTWeakInterposerHelper.h; sourceTree = "<group>"; };
-		A01CEA9F18EC1CB7006A55BC /* _DVTXMLParsingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DVTXMLParsingState.h; sourceTree = "<group>"; };
-		A01CEAA018EC1CB7006A55BC /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
-		A01CEAA118EC1CB7006A55BC /* DataGatheringNSURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGatheringNSURLConnectionDelegate.h; sourceTree = "<group>"; };
-		A01CEAA218EC1CB7006A55BC /* DataWritingNSURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataWritingNSURLConnectionDelegate.h; sourceTree = "<group>"; };
-		A01CEAA318EC1CB7006A55BC /* DTDKAddAppIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKAddAppIDService.h; sourceTree = "<group>"; };
-		A01CEAA418EC1CB7006A55BC /* DTDKAddDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKAddDeviceService.h; sourceTree = "<group>"; };
-		A01CEAA518EC1CB7006A55BC /* DTDKAddShoeboxIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKAddShoeboxIDService.h; sourceTree = "<group>"; };
-		A01CEAA618EC1CB7006A55BC /* DTDKCertificateAuthorityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKCertificateAuthorityService.h; sourceTree = "<group>"; };
-		A01CEAA718EC1CB7006A55BC /* DTDKCertificateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKCertificateService.h; sourceTree = "<group>"; };
-		A01CEAA818EC1CB7006A55BC /* DTDKCreateProvisioningProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKCreateProvisioningProfileService.h; sourceTree = "<group>"; };
-		A01CEAA918EC1CB7006A55BC /* DTDKDeleteAppIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDeleteAppIDService.h; sourceTree = "<group>"; };
-		A01CEAAA18EC1CB7006A55BC /* DTDKDeleteProvisioningProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDeleteProvisioningProfileService.h; sourceTree = "<group>"; };
-		A01CEAAB18EC1CB7006A55BC /* DTDKDeleteShoeboxIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDeleteShoeboxIDService.h; sourceTree = "<group>"; };
-		A01CEAAC18EC1CB7006A55BC /* DTDKDeveloperInfoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDeveloperInfoService.h; sourceTree = "<group>"; };
-		A01CEAAD18EC1CB7006A55BC /* DTDKDeveloperPortalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDeveloperPortalService.h; sourceTree = "<group>"; };
-		A01CEAAE18EC1CB7006A55BC /* DTDKDownloadCertService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDownloadCertService.h; sourceTree = "<group>"; };
-		A01CEAAF18EC1CB7006A55BC /* DTDKDownloadProvisioningProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKDownloadProvisioningProfileService.h; sourceTree = "<group>"; };
-		A01CEAB018EC1CB7006A55BC /* DTDKFetchAppIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKFetchAppIDService.h; sourceTree = "<group>"; };
-		A01CEAB118EC1CB7006A55BC /* DTDKListAppIDsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListAppIDsService.h; sourceTree = "<group>"; };
-		A01CEAB218EC1CB7006A55BC /* DTDKListCertService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListCertService.h; sourceTree = "<group>"; };
-		A01CEAB318EC1CB7006A55BC /* DTDKListCSRsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListCSRsService.h; sourceTree = "<group>"; };
-		A01CEAB418EC1CB7006A55BC /* DTDKListDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListDeviceService.h; sourceTree = "<group>"; };
-		A01CEAB518EC1CB7006A55BC /* DTDKListEverythingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListEverythingService.h; sourceTree = "<group>"; };
-		A01CEAB618EC1CB7006A55BC /* DTDKListProvisioningProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListProvisioningProfileService.h; sourceTree = "<group>"; };
-		A01CEAB718EC1CB7006A55BC /* DTDKListShoeboxIDsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListShoeboxIDsService.h; sourceTree = "<group>"; };
-		A01CEAB818EC1CB7006A55BC /* DTDKListTeamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKListTeamService.h; sourceTree = "<group>"; };
-		A01CEAB918EC1CB7006A55BC /* DTDKRemoveDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKRemoveDeviceService.h; sourceTree = "<group>"; };
-		A01CEABA18EC1CB7006A55BC /* DTDKRenameDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKRenameDeviceService.h; sourceTree = "<group>"; };
-		A01CEABB18EC1CB7006A55BC /* DTDKRenewProvisioningProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKRenewProvisioningProfileService.h; sourceTree = "<group>"; };
-		A01CEABC18EC1CB7006A55BC /* DTDKRevokeCertService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKRevokeCertService.h; sourceTree = "<group>"; };
-		A01CEABD18EC1CB7006A55BC /* DTDKSubmitCSRService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKSubmitCSRService.h; sourceTree = "<group>"; };
-		A01CEABE18EC1CB7006A55BC /* DTDKTeamBasedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKTeamBasedService.h; sourceTree = "<group>"; };
-		A01CEABF18EC1CB7006A55BC /* DTDKUpdateAppIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDKUpdateAppIDService.h; sourceTree = "<group>"; };
-		A01CEAC018EC1CB7006A55BC /* DVTAbstractMacDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAbstractMacDevice.h; sourceTree = "<group>"; };
-		A01CEAC118EC1CB7006A55BC /* DVTActivationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTActivationRule.h; sourceTree = "<group>"; };
-		A01CEAC218EC1CB7006A55BC /* DVTAddAppIDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAddAppIDOperation.h; sourceTree = "<group>"; };
-		A01CEAC318EC1CB7006A55BC /* DVTAddDeviceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAddDeviceOperation.h; sourceTree = "<group>"; };
-		A01CEAC418EC1CB7006A55BC /* DVTAppIDRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAppIDRecord.h; sourceTree = "<group>"; };
-		A01CEAC518EC1CB7006A55BC /* DVTAppleIDBasedDeveloperAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAppleIDBasedDeveloperAccount.h; sourceTree = "<group>"; };
-		A01CEAC618EC1CB7006A55BC /* DVTArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTArchitecture.h; sourceTree = "<group>"; };
-		A01CEAC718EC1CB7006A55BC /* DVTArrayObservingBlockToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTArrayObservingBlockToken.h; sourceTree = "<group>"; };
-		A01CEAC818EC1CB7006A55BC /* DVTAssertingWeakInterposer_ProxyHelperReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAssertingWeakInterposer_ProxyHelperReference.h; sourceTree = "<group>"; };
-		A01CEAC918EC1CB7006A55BC /* DVTAssertingWeakInterposer_RuntimeWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAssertingWeakInterposer_RuntimeWeakReference.h; sourceTree = "<group>"; };
-		A01CEACA18EC1CB7006A55BC /* DVTAssertionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAssertionHandler.h; sourceTree = "<group>"; };
-		A01CEACB18EC1CB7006A55BC /* DVTAssertionHandling-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTAssertionHandling-Protocol.h"; sourceTree = "<group>"; };
-		A01CEACC18EC1CB7006A55BC /* DVTAutosynchingProxyArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAutosynchingProxyArray.h; sourceTree = "<group>"; };
-		A01CEACD18EC1CB7006A55BC /* DVTBlockScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTBlockScanner.h; sourceTree = "<group>"; };
-		A01CEACE18EC1CB7006A55BC /* DVTBloomFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTBloomFilter.h; sourceTree = "<group>"; };
-		A01CEACF18EC1CB7006A55BC /* DVTBuildVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTBuildVersion.h; sourceTree = "<group>"; };
-		A01CEAD018EC1CB7006A55BC /* DVTByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTByteBuffer.h; sourceTree = "<group>"; };
-		A01CEAD118EC1CB7006A55BC /* DVTCancellable-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTCancellable-Protocol.h"; sourceTree = "<group>"; };
-		A01CEAD218EC1CB7006A55BC /* DVTCancellationBlockCompletion-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTCancellationBlockCompletion-Protocol.h"; sourceTree = "<group>"; };
-		A01CEAD318EC1CB7006A55BC /* DVTCategoryItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCategoryItemMatcher.h; sourceTree = "<group>"; };
-		A01CEAD418EC1CB7006A55BC /* DVTCertBasedDeveloperAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCertBasedDeveloperAccount.h; sourceTree = "<group>"; };
-		A01CEAD518EC1CB7006A55BC /* DVTCertificateRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCertificateRecord.h; sourceTree = "<group>"; };
-		A01CEAD618EC1CB7006A55BC /* DVTCertificateUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCertificateUtilities.h; sourceTree = "<group>"; };
-		A01CEAD718EC1CB7006A55BC /* DVTCharStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCharStream.h; sourceTree = "<group>"; };
-		A01CEAD818EC1CB7006A55BC /* DVTCheapReusableSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCheapReusableSubstring.h; sourceTree = "<group>"; };
-		A01CEAD918EC1CB7006A55BC /* DVTClassItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTClassItemMatcher.h; sourceTree = "<group>"; };
-		A01CEADA18EC1CB7006A55BC /* DVTCodesignParameterSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCodesignParameterSnapshot.h; sourceTree = "<group>"; };
-		A01CEADB18EC1CB7006A55BC /* DVTCodesignResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCodesignResolver.h; sourceTree = "<group>"; };
-		A01CEADC18EC1CB7006A55BC /* DVTCollectCertificateFailuresOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCollectCertificateFailuresOperation.h; sourceTree = "<group>"; };
-		A01CEADD18EC1CB7006A55BC /* DVTCommandLineOptionDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCommandLineOptionDefinition.h; sourceTree = "<group>"; };
-		A01CEADE18EC1CB7006A55BC /* DVTCommandLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCommandLineParser.h; sourceTree = "<group>"; };
-		A01CEADF18EC1CB7006A55BC /* DVTCommandLineTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCommandLineTool.h; sourceTree = "<group>"; };
-		A01CEAE018EC1CB7006A55BC /* DVTComparisonDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTComparisonDocumentLocation.h; sourceTree = "<group>"; };
-		A01CEAE118EC1CB7006A55BC /* DVTConcreteHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConcreteHashTable.h; sourceTree = "<group>"; };
-		A01CEAE218EC1CB7006A55BC /* DVTConcreteMapTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConcreteMapTable.h; sourceTree = "<group>"; };
-		A01CEAE318EC1CB7006A55BC /* DVTConcreteMapTableValueEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConcreteMapTableValueEnumerator.h; sourceTree = "<group>"; };
-		A01CEAE418EC1CB7006A55BC /* DVTConcretePointerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConcretePointerArray.h; sourceTree = "<group>"; };
-		A01CEAE518EC1CB7006A55BC /* DVTConcretePointerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConcretePointerFunctions.h; sourceTree = "<group>"; };
-		A01CEAE618EC1CB7006A55BC /* DVTConfinementService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConfinementService.h; sourceTree = "<group>"; };
-		A01CEAE718EC1CB7006A55BC /* DVTConfinementServiceConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConfinementServiceConnection.h; sourceTree = "<group>"; };
-		A01CEAE818EC1CB7006A55BC /* DVTConsoleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConsoleLogger.h; sourceTree = "<group>"; };
-		A01CEAE918EC1CB7006A55BC /* DVTConsoleOutputFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTConsoleOutputFileHandle.h; sourceTree = "<group>"; };
-		A01CEAEA18EC1CB7006A55BC /* DVTCopyOnWriteMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCopyOnWriteMutableArray.h; sourceTree = "<group>"; };
-		A01CEAEB18EC1CB7006A55BC /* DVTCPlusPlusSourceModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCPlusPlusSourceModelParser.h; sourceTree = "<group>"; };
-		A01CEAEC18EC1CB7006A55BC /* DVTCreateProfileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCreateProfileOperation.h; sourceTree = "<group>"; };
-		A01CEAED18EC1CB7006A55BC /* DVTCSourceModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCSourceModelParser.h; sourceTree = "<group>"; };
-		A01CEAEE18EC1CB7006A55BC /* DVTCustomDataOwnership.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCustomDataOwnership.h; sourceTree = "<group>"; };
-		A01CEAEF18EC1CB7006A55BC /* DVTCustomDataSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCustomDataSpecifier.h; sourceTree = "<group>"; };
-		A01CEAF018EC1CB7006A55BC /* DVTCustomDataStoring-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTCustomDataStoring-Protocol.h"; sourceTree = "<group>"; };
-		A01CEAF118EC1CB7006A55BC /* DVTDeclaredPrimitiveFileDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeclaredPrimitiveFileDataType.h; sourceTree = "<group>"; };
-		A01CEAF218EC1CB7006A55BC /* DVTDeveloperAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperAccount.h; sourceTree = "<group>"; };
-		A01CEAF318EC1CB7006A55BC /* DVTDeveloperAccountCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperAccountCredentials.h; sourceTree = "<group>"; };
-		A01CEAF418EC1CB7006A55BC /* DVTDeveloperAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperAccountManager.h; sourceTree = "<group>"; };
-		A01CEAF518EC1CB7006A55BC /* DVTDeveloperAccountSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperAccountSession.h; sourceTree = "<group>"; };
-		A01CEAF618EC1CB7006A55BC /* DVTDeveloperInfoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperInfoOperation.h; sourceTree = "<group>"; };
-		A01CEAF718EC1CB7006A55BC /* DVTDeveloperPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperPaths.h; sourceTree = "<group>"; };
-		A01CEAF818EC1CB7006A55BC /* DVTDeveloperPortalDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperPortalDatabase.h; sourceTree = "<group>"; };
-		A01CEAF918EC1CB7006A55BC /* DVTDeveloperPortalResponseWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperPortalResponseWrapper.h; sourceTree = "<group>"; };
-		A01CEAFA18EC1CB7006A55BC /* DVTDeveloperPortalServiceConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperPortalServiceConnection.h; sourceTree = "<group>"; };
-		A01CEAFB18EC1CB7006A55BC /* DVTDeveloperProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperProfile.h; sourceTree = "<group>"; };
-		A01CEAFC18EC1CB7006A55BC /* DVTDeveloperProfileAccountProvider-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTDeveloperProfileAccountProvider-Protocol.h"; sourceTree = "<group>"; };
-		A01CEAFD18EC1CB7006A55BC /* DVTDeveloperRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperRecord.h; sourceTree = "<group>"; };
-		A01CEAFE18EC1CB7006A55BC /* DVTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDevice.h; sourceTree = "<group>"; };
-		A01CEAFF18EC1CB7006A55BC /* DVTDeviceCapability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceCapability.h; sourceTree = "<group>"; };
-		A01CEB0018EC1CB7006A55BC /* DVTDeviceCapabilityMatchAnythingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceCapabilityMatchAnythingObject.h; sourceTree = "<group>"; };
-		A01CEB0118EC1CB7006A55BC /* DVTDeviceLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceLocator.h; sourceTree = "<group>"; };
-		A01CEB0218EC1CB7006A55BC /* DVTDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceManager.h; sourceTree = "<group>"; };
-		A01CEB0318EC1CB7006A55BC /* DVTDeviceRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceRecord.h; sourceTree = "<group>"; };
-		A01CEB0418EC1CB7006A55BC /* DVTDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceService.h; sourceTree = "<group>"; };
-		A01CEB0518EC1CB7006A55BC /* DVTDeviceSupportFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceSupportFiles.h; sourceTree = "<group>"; };
-		A01CEB0618EC1CB7006A55BC /* DVTDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeviceType.h; sourceTree = "<group>"; };
-		A01CEB0718EC1CB7006A55BC /* DVTDiffBinaryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffBinaryDataSource.h; sourceTree = "<group>"; };
-		A01CEB0818EC1CB7006A55BC /* DVTDiffCharacterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffCharacterDataSource.h; sourceTree = "<group>"; };
-		A01CEB0918EC1CB7006A55BC /* DVTDiffContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffContext.h; sourceTree = "<group>"; };
-		A01CEB0A18EC1CB7006A55BC /* DVTDiffDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffDataSource.h; sourceTree = "<group>"; };
-		A01CEB0B18EC1CB7006A55BC /* DVTDiffDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffDescriptor.h; sourceTree = "<group>"; };
-		A01CEB0C18EC1CB7006A55BC /* DVTDiffHashing-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTDiffHashing-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB0D18EC1CB7006A55BC /* DVTDiffLineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffLineDataSource.h; sourceTree = "<group>"; };
-		A01CEB0E18EC1CB7006A55BC /* DVTDiffWordDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDiffWordDataSource.h; sourceTree = "<group>"; };
-		A01CEB0F18EC1CB7006A55BC /* DVTDirectoryBasedCustomDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDirectoryBasedCustomDataStore.h; sourceTree = "<group>"; };
-		A01CEB1018EC1CB7006A55BC /* DVTDispatchLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDispatchLock.h; sourceTree = "<group>"; };
-		A01CEB1118EC1CB7006A55BC /* DVTDocumentFragmentFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDocumentFragmentFilter.h; sourceTree = "<group>"; };
-		A01CEB1218EC1CB7006A55BC /* DVTDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDocumentLocation.h; sourceTree = "<group>"; };
-		A01CEB1318EC1CB7006A55BC /* DVTDotSeparatedVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDotSeparatedVersion.h; sourceTree = "<group>"; };
-		A01CEB1418EC1CB7006A55BC /* DVTDownloadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadable.h; sourceTree = "<group>"; };
-		A01CEB1518EC1CB7006A55BC /* DVTDownloadable_PKInstallClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadable_PKInstallClientDelegate.h; sourceTree = "<group>"; };
-		A01CEB1618EC1CB7006A55BC /* DVTDownloadableDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableDependency.h; sourceTree = "<group>"; };
-		A01CEB1718EC1CB7006A55BC /* DVTDownloadableIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableIndex.h; sourceTree = "<group>"; };
-		A01CEB1818EC1CB7006A55BC /* DVTDownloadableInstallationHelper-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTDownloadableInstallationHelper-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB1918EC1CB7006A55BC /* DVTDownloadableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableManager.h; sourceTree = "<group>"; };
-		A01CEB1A18EC1CB7006A55BC /* DVTDownloadableManagerIOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableManagerIOCache.h; sourceTree = "<group>"; };
-		A01CEB1B18EC1CB7006A55BC /* DVTDownloadableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableOperation.h; sourceTree = "<group>"; };
-		A01CEB1C18EC1CB7006A55BC /* DVTDownloadableOperationDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableOperationDownload.h; sourceTree = "<group>"; };
-		A01CEB1D18EC1CB7006A55BC /* DVTDownloadableOperationRefreshIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadableOperationRefreshIndex.h; sourceTree = "<group>"; };
-		A01CEB1E18EC1CB7006A55BC /* DVTDownloadCertificateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadCertificateOperation.h; sourceTree = "<group>"; };
-		A01CEB1F18EC1CB7006A55BC /* DVTDownloadDeveloperIDCertificateAuthorityOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadDeveloperIDCertificateAuthorityOperation.h; sourceTree = "<group>"; };
-		A01CEB2018EC1CB7006A55BC /* DVTDownloadProfileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadProfileOperation.h; sourceTree = "<group>"; };
-		A01CEB2118EC1CB7006A55BC /* DVTDownloadTeamProfileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadTeamProfileOperation.h; sourceTree = "<group>"; };
-		A01CEB2218EC1CB7006A55BC /* DVTDownloadWWDRCertificateAuthorityOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDownloadWWDRCertificateAuthorityOperation.h; sourceTree = "<group>"; };
-		A01CEB2318EC1CB7006A55BC /* DVTDynamicLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDynamicLogController.h; sourceTree = "<group>"; };
-		A01CEB2418EC1CB7006A55BC /* DVTDynamicPrimitiveFileDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDynamicPrimitiveFileDataType.h; sourceTree = "<group>"; };
-		A01CEB2518EC1CB7006A55BC /* DVTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtension.h; sourceTree = "<group>"; };
-		A01CEB2618EC1CB7006A55BC /* DVTExtensionAttributeDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtensionAttributeDescription.h; sourceTree = "<group>"; };
-		A01CEB2718EC1CB7006A55BC /* DVTExtensionElementDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtensionElementDescription.h; sourceTree = "<group>"; };
-		A01CEB2818EC1CB7006A55BC /* DVTExtensionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtensionParameter.h; sourceTree = "<group>"; };
-		A01CEB2918EC1CB7006A55BC /* DVTExtensionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtensionPoint.h; sourceTree = "<group>"; };
-		A01CEB2A18EC1CB7006A55BC /* DVTExtensionPropertyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtensionPropertyDescription.h; sourceTree = "<group>"; };
-		A01CEB2B18EC1CB7006A55BC /* DVTExtraXMLArchiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtraXMLArchiveData.h; sourceTree = "<group>"; };
-		A01CEB2C18EC1CB7006A55BC /* DVTExtraXMLAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtraXMLAttribute.h; sourceTree = "<group>"; };
-		A01CEB2D18EC1CB7006A55BC /* DVTExtraXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtraXMLElement.h; sourceTree = "<group>"; };
-		A01CEB2E18EC1CB7006A55BC /* DVTFetchOrCreateAppIDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFetchOrCreateAppIDOperation.h; sourceTree = "<group>"; };
-		A01CEB2F18EC1CB7006A55BC /* DVTFileDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFileDataType.h; sourceTree = "<group>"; };
-		A01CEB3018EC1CB7006A55BC /* DVTFileDataTypeDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFileDataTypeDetection.h; sourceTree = "<group>"; };
-		A01CEB3118EC1CB7006A55BC /* DVTFileDataTypeDetectionMagicCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFileDataTypeDetectionMagicCache.h; sourceTree = "<group>"; };
-		A01CEB3218EC1CB7006A55BC /* DVTFileDataTypeDetector-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTFileDataTypeDetector-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB3318EC1CB7006A55BC /* DVTFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFileLogger.h; sourceTree = "<group>"; };
-		A01CEB3418EC1CB7006A55BC /* DVTFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFilePath.h; sourceTree = "<group>"; };
-		A01CEB3518EC1CB7006A55BC /* DVTFilePathEventWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFilePathEventWatcher.h; sourceTree = "<group>"; };
-		A01CEB3618EC1CB7006A55BC /* DVTFileSystemRepresentationProviding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTFileSystemRepresentationProviding-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB3718EC1CB7006A55BC /* DVTFileSystemVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFileSystemVNode.h; sourceTree = "<group>"; };
-		A01CEB3818EC1CB7006A55BC /* DVTFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFileWrapper.h; sourceTree = "<group>"; };
-		A01CEB3918EC1CB7006A55BC /* DVTFindDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFindDescriptor.h; sourceTree = "<group>"; };
-		A01CEB3A18EC1CB7006A55BC /* DVTFindRegularExpressionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFindRegularExpressionDescriptor.h; sourceTree = "<group>"; };
-		A01CEB3B18EC1CB7006A55BC /* DVTFindRegularExpressionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFindRegularExpressionResult.h; sourceTree = "<group>"; };
-		A01CEB3C18EC1CB7006A55BC /* DVTFindResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFindResult.h; sourceTree = "<group>"; };
-		A01CEB3D18EC1CB7006A55BC /* DVTFindTextualDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFindTextualDescriptor.h; sourceTree = "<group>"; };
-		A01CEB3E18EC1CB7006A55BC /* DVTFirstLaunchPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFirstLaunchPackage.h; sourceTree = "<group>"; };
-		A01CEB3F18EC1CB7006A55BC /* DVTFirstLaunchPackageInstallationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFirstLaunchPackageInstallationHelper.h; sourceTree = "<group>"; };
-		A01CEB4018EC1CB7006A55BC /* DVTFunctionItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFunctionItemMatcher.h; sourceTree = "<group>"; };
-		A01CEB4118EC1CB7006A55BC /* DVTFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFuture.h; sourceTree = "<group>"; };
-		A01CEB4218EC1CB7006A55BC /* DVTGeneratedContentProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTGeneratedContentProvider.h; sourceTree = "<group>"; };
-		A01CEB4318EC1CB7006A55BC /* DVTGlobalCustomDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTGlobalCustomDataStore.h; sourceTree = "<group>"; };
-		A01CEB4418EC1CB7006A55BC /* DVTHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTHashTable.h; sourceTree = "<group>"; };
-		A01CEB4518EC1CB7006A55BC /* DVTHTMLEntityScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTHTMLEntityScanner.h; sourceTree = "<group>"; };
-		A01CEB4618EC1CB7006A55BC /* DVTHTMLScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTHTMLScanner.h; sourceTree = "<group>"; };
-		A01CEB4718EC1CB7006A55BC /* DVTInvalidation-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTInvalidation-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB4818EC1CB7006A55BC /* DVTInvalidationMixIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTInvalidationMixIn.h; sourceTree = "<group>"; };
-		A01CEB4918EC1CB7006A55BC /* DVTInvalidExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTInvalidExtension.h; sourceTree = "<group>"; };
-		A01CEB4A18EC1CB7006A55BC /* DVTKeywordScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTKeywordScanner.h; sourceTree = "<group>"; };
-		A01CEB4B18EC1CB7006A55BC /* DVTKnownStringMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTKnownStringMapping.h; sourceTree = "<group>"; };
-		A01CEB4C18EC1CB7006A55BC /* DVTKVCMethodStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTKVCMethodStyle.h; sourceTree = "<group>"; };
-		A01CEB4D18EC1CB7006A55BC /* DVTKVOConditionValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTKVOConditionValidator.h; sourceTree = "<group>"; };
-		A01CEB4E18EC1CB7006A55BC /* DVTLanguageSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLanguageSpecification.h; sourceTree = "<group>"; };
-		A01CEB4F18EC1CB7006A55BC /* DVTLibraryFragmentFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLibraryFragmentFilter.h; sourceTree = "<group>"; };
-		A01CEB5018EC1CB7006A55BC /* DVTLicenseAgreementHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLicenseAgreementHelper.h; sourceTree = "<group>"; };
-		A01CEB5118EC1CB7006A55BC /* DVTListAppIDsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListAppIDsOperation.h; sourceTree = "<group>"; };
-		A01CEB5218EC1CB7006A55BC /* DVTListCertsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListCertsOperation.h; sourceTree = "<group>"; };
-		A01CEB5318EC1CB7006A55BC /* DVTListDevicesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListDevicesOperation.h; sourceTree = "<group>"; };
-		A01CEB5418EC1CB7006A55BC /* DVTListEverythingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListEverythingOperation.h; sourceTree = "<group>"; };
-		A01CEB5518EC1CB7006A55BC /* DVTListProvisioningProfilesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListProvisioningProfilesOperation.h; sourceTree = "<group>"; };
-		A01CEB5618EC1CB7006A55BC /* DVTListShoeboxIDsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListShoeboxIDsOperation.h; sourceTree = "<group>"; };
-		A01CEB5718EC1CB7006A55BC /* DVTListTeamOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTListTeamOperation.h; sourceTree = "<group>"; };
-		A01CEB5818EC1CB7006A55BC /* DVTLocalComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLocalComputer.h; sourceTree = "<group>"; };
-		A01CEB5918EC1CB7006A55BC /* DVTLocalComputerLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLocalComputerLocator.h; sourceTree = "<group>"; };
-		A01CEB5A18EC1CB7006A55BC /* DVTLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLocale.h; sourceTree = "<group>"; };
-		A01CEB5B18EC1CB7006A55BC /* DVTLocalProcessInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLocalProcessInformation.h; sourceTree = "<group>"; };
-		A01CEB5C18EC1CB7006A55BC /* DVTLogAspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLogAspect.h; sourceTree = "<group>"; };
-		A01CEB5D18EC1CB7006A55BC /* DVTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLogger.h; sourceTree = "<group>"; };
-		A01CEB5E18EC1CB7006A55BC /* DVTMacroAssignmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroAssignmentInfo.h; sourceTree = "<group>"; };
-		A01CEB5F18EC1CB7006A55BC /* DVTMacroDefinitionCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroDefinitionCondition.h; sourceTree = "<group>"; };
-		A01CEB6018EC1CB7006A55BC /* DVTMacroDefinitionConditionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroDefinitionConditionParameter.h; sourceTree = "<group>"; };
-		A01CEB6118EC1CB7006A55BC /* DVTMacroDefinitionConditionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroDefinitionConditionSet.h; sourceTree = "<group>"; };
-		A01CEB6218EC1CB7006A55BC /* DVTMacroDefinitionTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroDefinitionTable.h; sourceTree = "<group>"; };
-		A01CEB6318EC1CB7006A55BC /* DVTMacroExpansion-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTMacroExpansion-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB6418EC1CB7006A55BC /* DVTMacroExpansionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionBlock.h; sourceTree = "<group>"; };
-		A01CEB6518EC1CB7006A55BC /* DVTMacroExpansionIntegerMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionIntegerMetric.h; sourceTree = "<group>"; };
-		A01CEB6618EC1CB7006A55BC /* DVTMacroExpansionOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionOperator.h; sourceTree = "<group>"; };
-		A01CEB6718EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionReplacementOperator.h; sourceTree = "<group>"; };
-		A01CEB6818EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionReplacementOperator_base.h; sourceTree = "<group>"; };
-		A01CEB6918EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionReplacementOperator_dir.h; sourceTree = "<group>"; };
-		A01CEB6A18EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionReplacementOperator_file.h; sourceTree = "<group>"; };
-		A01CEB6B18EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_suffix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionReplacementOperator_suffix.h; sourceTree = "<group>"; };
-		A01CEB6C18EC1CB7006A55BC /* DVTMacroExpansionReplacementOperatorWithParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionReplacementOperatorWithParseError.h; sourceTree = "<group>"; };
-		A01CEB6D18EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator.h; sourceTree = "<group>"; };
-		A01CEB6E18EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_base.h; sourceTree = "<group>"; };
-		A01CEB6F18EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_dir.h; sourceTree = "<group>"; };
-		A01CEB7018EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_file.h; sourceTree = "<group>"; };
-		A01CEB7118EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_identifier.h; sourceTree = "<group>"; };
-		A01CEB7218EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_lower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_lower.h; sourceTree = "<group>"; };
-		A01CEB7318EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_quote.h; sourceTree = "<group>"; };
-		A01CEB7418EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_rfc1034identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_rfc1034identifier.h; sourceTree = "<group>"; };
-		A01CEB7518EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_standardizepath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_standardizepath.h; sourceTree = "<group>"; };
-		A01CEB7618EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_suffix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_suffix.h; sourceTree = "<group>"; };
-		A01CEB7718EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_upper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperator_upper.h; sourceTree = "<group>"; };
-		A01CEB7818EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperatorWithParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionRetrievalOperatorWithParseError.h; sourceTree = "<group>"; };
-		A01CEB7918EC1CB7006A55BC /* DVTMacroExpansionScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionScope.h; sourceTree = "<group>"; };
-		A01CEB7A18EC1CB7006A55BC /* DVTMacroExpansionStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionStatistics.h; sourceTree = "<group>"; };
-		A01CEB7B18EC1CB7006A55BC /* DVTMacroExpansionString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionString.h; sourceTree = "<group>"; };
-		A01CEB7C18EC1CB7006A55BC /* DVTMacroExpansionString_Concatenation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionString_Concatenation.h; sourceTree = "<group>"; };
-		A01CEB7D18EC1CB7006A55BC /* DVTMacroExpansionString_Literal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionString_Literal.h; sourceTree = "<group>"; };
-		A01CEB7E18EC1CB7006A55BC /* DVTMacroExpansionString_StringSubstitution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionString_StringSubstitution.h; sourceTree = "<group>"; };
-		A01CEB7F18EC1CB7006A55BC /* DVTMacroExpansionString_Substitution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionString_Substitution.h; sourceTree = "<group>"; };
-		A01CEB8018EC1CB7006A55BC /* DVTMacroExpansionStringList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionStringList.h; sourceTree = "<group>"; };
-		A01CEB8118EC1CB7006A55BC /* DVTMacroExpansionStringList_Literal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionStringList_Literal.h; sourceTree = "<group>"; };
-		A01CEB8218EC1CB7006A55BC /* DVTMacroExpansionStringList_NonLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroExpansionStringList_NonLiteral.h; sourceTree = "<group>"; };
-		A01CEB8318EC1CB7006A55BC /* DVTMacroNameRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroNameRegistry.h; sourceTree = "<group>"; };
-		A01CEB8418EC1CB7006A55BC /* DVTMacroNameRegistryRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroNameRegistryRegistration.h; sourceTree = "<group>"; };
-		A01CEB8518EC1CB7006A55BC /* DVTMacroNameString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroNameString.h; sourceTree = "<group>"; };
-		A01CEB8618EC1CB7006A55BC /* DVTMapTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMapTable.h; sourceTree = "<group>"; };
-		A01CEB8718EC1CB7006A55BC /* DVTMemorySnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMemorySnapshot.h; sourceTree = "<group>"; };
-		A01CEB8818EC1CB7006A55BC /* DVTMessageTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMessageTrace.h; sourceTree = "<group>"; };
-		A01CEB8918EC1CB7006A55BC /* DVTMethodItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMethodItemMatcher.h; sourceTree = "<group>"; };
-		A01CEB8A18EC1CB7006A55BC /* DVTMixIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMixIn.h; sourceTree = "<group>"; };
-		A01CEB8B18EC1CB7006A55BC /* DVTModelObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTModelObject-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB8C18EC1CB7006A55BC /* DVTModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTModelObject.h; sourceTree = "<group>"; };
-		A01CEB8D18EC1CB7006A55BC /* DVTModelObjectGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTModelObjectGraph.h; sourceTree = "<group>"; };
-		A01CEB8E18EC1CB7006A55BC /* DVTModelTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTModelTree.h; sourceTree = "<group>"; };
-		A01CEB8F18EC1CB7006A55BC /* DVTModelTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTModelTreeNode.h; sourceTree = "<group>"; };
-		A01CEB9018EC1CB7006A55BC /* DVTMountedFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMountedFileSystem.h; sourceTree = "<group>"; };
-		A01CEB9118EC1CB7006A55BC /* DVTMTReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMTReport.h; sourceTree = "<group>"; };
-		A01CEB9218EC1CB7006A55BC /* DVTMutableKnownStringSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMutableKnownStringSet.h; sourceTree = "<group>"; };
-		A01CEB9318EC1CB7006A55BC /* DVTMutableOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMutableOrderedDictionary.h; sourceTree = "<group>"; };
-		A01CEB9418EC1CB7006A55BC /* DVTMutableOrderedSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMutableOrderedSet.h; sourceTree = "<group>"; };
-		A01CEB9518EC1CB7006A55BC /* DVTMutableRangeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMutableRangeArray.h; sourceTree = "<group>"; };
-		A01CEB9618EC1CB7006A55BC /* DVTNotificationToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTNotificationToken.h; sourceTree = "<group>"; };
-		A01CEB9718EC1CB7006A55BC /* DVTNumberScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTNumberScanner.h; sourceTree = "<group>"; };
-		A01CEB9818EC1CB7006A55BC /* DVTObjCPlusPlusSourceModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObjCPlusPlusSourceModelParser.h; sourceTree = "<group>"; };
-		A01CEB9918EC1CB7006A55BC /* DVTObjCSourceModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObjCSourceModelParser.h; sourceTree = "<group>"; };
-		A01CEB9A18EC1CB7006A55BC /* DVTObjectDeallocationMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObjectDeallocationMonitor.h; sourceTree = "<group>"; };
-		A01CEB9B18EC1CB7006A55BC /* DVTObservableObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObservableObjectProxy.h; sourceTree = "<group>"; };
-		A01CEB9C18EC1CB7006A55BC /* DVTObserveXPCServicesProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTObserveXPCServicesProtocol-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB9D18EC1CB7006A55BC /* DVTObserveXPCServicesProtocol_Callback-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTObserveXPCServicesProtocol_Callback-Protocol.h"; sourceTree = "<group>"; };
-		A01CEB9E18EC1CB7006A55BC /* DVTObservingBlockToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObservingBlockToken.h; sourceTree = "<group>"; };
-		A01CEB9F18EC1CB7006A55BC /* DVTObservingToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObservingToken.h; sourceTree = "<group>"; };
-		A01CEBA018EC1CB7006A55BC /* DVTObsoleteUnarchivedObjectPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObsoleteUnarchivedObjectPlaceholder.h; sourceTree = "<group>"; };
-		A01CEBA118EC1CB7006A55BC /* DVTOneShotBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTOneShotBlock.h; sourceTree = "<group>"; };
-		A01CEBA218EC1CB8006A55BC /* DVTOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTOperation.h; sourceTree = "<group>"; };
-		A01CEBA318EC1CB8006A55BC /* DVTOperationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTOperationGroup.h; sourceTree = "<group>"; };
-		A01CEBA418EC1CB8006A55BC /* DVTOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTOSVersion.h; sourceTree = "<group>"; };
-		A01CEBA518EC1CB8006A55BC /* DVTPatienceDiffContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPatienceDiffContext.h; sourceTree = "<group>"; };
-		A01CEBA618EC1CB8006A55BC /* DVTPerformanceCheckpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPerformanceCheckpoint.h; sourceTree = "<group>"; };
-		A01CEBA718EC1CB8006A55BC /* DVTPerformanceMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPerformanceMetric.h; sourceTree = "<group>"; };
-		A01CEBA818EC1CB8006A55BC /* DVTPerformanceStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPerformanceStatistic.h; sourceTree = "<group>"; };
-		A01CEBA918EC1CB8006A55BC /* DVTPerformanceTestLogger_TimeForWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPerformanceTestLogger_TimeForWork.h; sourceTree = "<group>"; };
-		A01CEBAA18EC1CB8006A55BC /* DVTPerformanceTestOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPerformanceTestOutput.h; sourceTree = "<group>"; };
-		A01CEBAB18EC1CB8006A55BC /* DVTPerformanceTestParser-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTPerformanceTestParser-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBAC18EC1CB8006A55BC /* DVTPerformanceTestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPerformanceTestResult.h; sourceTree = "<group>"; };
-		A01CEBAD18EC1CB8006A55BC /* DVTPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPipe.h; sourceTree = "<group>"; };
-		A01CEBAE18EC1CB8006A55BC /* DVTPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlatform.h; sourceTree = "<group>"; };
-		A01CEBAF18EC1CB8006A55BC /* DVTPlatformFamily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlatformFamily.h; sourceTree = "<group>"; };
-		A01CEBB018EC1CB8006A55BC /* DVTPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlugIn.h; sourceTree = "<group>"; };
-		A01CEBB118EC1CB8006A55BC /* DVTPlugInLocalizedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlugInLocalizedString.h; sourceTree = "<group>"; };
-		A01CEBB218EC1CB8006A55BC /* DVTPlugInLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlugInLocator.h; sourceTree = "<group>"; };
-		A01CEBB318EC1CB8006A55BC /* DVTPlugInManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlugInManager.h; sourceTree = "<group>"; };
-		A01CEBB418EC1CB8006A55BC /* DVTPlugInScanRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlugInScanRecord.h; sourceTree = "<group>"; };
-		A01CEBB518EC1CB8006A55BC /* DVTPointerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPointerArray.h; sourceTree = "<group>"; };
-		A01CEBB618EC1CB8006A55BC /* DVTPointerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPointerFunctions.h; sourceTree = "<group>"; };
-		A01CEBB718EC1CB8006A55BC /* DVTPortalInfoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPortalInfoOperation.h; sourceTree = "<group>"; };
-		A01CEBB818EC1CB8006A55BC /* DVTPortalOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPortalOperation.h; sourceTree = "<group>"; };
-		A01CEBB918EC1CB8006A55BC /* DVTPortalOperationToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPortalOperationToken.h; sourceTree = "<group>"; };
-		A01CEBBA18EC1CB8006A55BC /* DVTPreprocessorItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPreprocessorItemMatcher.h; sourceTree = "<group>"; };
-		A01CEBBB18EC1CB8006A55BC /* DVTPrimitiveFileDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPrimitiveFileDataType.h; sourceTree = "<group>"; };
-		A01CEBBC18EC1CB8006A55BC /* DVTProcessInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTProcessInformation.h; sourceTree = "<group>"; };
-		A01CEBBD18EC1CB8006A55BC /* DVTProgressReporting-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTProgressReporting-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBBE18EC1CB8006A55BC /* DVTPromise-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTPromise-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBBF18EC1CB8006A55BC /* DVTPropertyListEncoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTPropertyListEncoding-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBC018EC1CB8006A55BC /* DVTProtocolItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTProtocolItemMatcher.h; sourceTree = "<group>"; };
-		A01CEBC118EC1CB8006A55BC /* DVTProvisioningProfile-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTProvisioningProfile-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBC218EC1CB8006A55BC /* DVTProvisioningProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTProvisioningProfileManager.h; sourceTree = "<group>"; };
-		A01CEBC318EC1CB8006A55BC /* DVTProvisioningProfileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTProvisioningProfileProvider.h; sourceTree = "<group>"; };
-		A01CEBC418EC1CB8006A55BC /* DVTProvisioningProfileRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTProvisioningProfileRecord.h; sourceTree = "<group>"; };
-		A01CEBC518EC1CB8006A55BC /* DVTPythonScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPythonScanner.h; sourceTree = "<group>"; };
-		A01CEBC618EC1CB8006A55BC /* DVTRangeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRangeArray.h; sourceTree = "<group>"; };
-		A01CEBC718EC1CB8006A55BC /* DVTReaderWriterLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTReaderWriterLock.h; sourceTree = "<group>"; };
-		A01CEBC818EC1CB8006A55BC /* DVTReferenceResolutionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTReferenceResolutionStrategy.h; sourceTree = "<group>"; };
-		A01CEBC918EC1CB8006A55BC /* DVTReferenceResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTReferenceResolver.h; sourceTree = "<group>"; };
-		A01CEBCA18EC1CB8006A55BC /* DVTRegexCommandLineOptionDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRegexCommandLineOptionDefinition.h; sourceTree = "<group>"; };
-		A01CEBCB18EC1CB8006A55BC /* DVTRegExScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRegExScanner.h; sourceTree = "<group>"; };
-		A01CEBCC18EC1CB8006A55BC /* DVTRegistrable-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTRegistrable-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBCD18EC1CB8006A55BC /* DVTRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRegistry.h; sourceTree = "<group>"; };
-		A01CEBCE18EC1CB8006A55BC /* DVTRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRegularExpression.h; sourceTree = "<group>"; };
-		A01CEBCF18EC1CB8006A55BC /* DVTRegularExpressionMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRegularExpressionMatch.h; sourceTree = "<group>"; };
-		A01CEBD018EC1CB8006A55BC /* DVTRelativeDateFormatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRelativeDateFormatting.h; sourceTree = "<group>"; };
-		A01CEBD118EC1CB8006A55BC /* DVTRescindCallbackObservingToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRescindCallbackObservingToken.h; sourceTree = "<group>"; };
-		A01CEBD218EC1CB8006A55BC /* DVTRevokeCertificateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRevokeCertificateOperation.h; sourceTree = "<group>"; };
-		A01CEBD318EC1CB8006A55BC /* DVTRoleRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRoleRecord.h; sourceTree = "<group>"; };
-		A01CEBD418EC1CB8006A55BC /* DVTRuleScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTRuleScanner.h; sourceTree = "<group>"; };
-		A01CEBD518EC1CB8006A55BC /* DVTScannerRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTScannerRule.h; sourceTree = "<group>"; };
-		A01CEBD618EC1CB8006A55BC /* DVTSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSDK.h; sourceTree = "<group>"; };
-		A01CEBD718EC1CB8006A55BC /* DVTSearchPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSearchPath.h; sourceTree = "<group>"; };
-		A01CEBD818EC1CB8006A55BC /* DVTSelectorBasedObservingToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSelectorBasedObservingToken.h; sourceTree = "<group>"; };
-		A01CEBD918EC1CB8006A55BC /* DVTSelfInstrumentationSession-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSelfInstrumentationSession-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBDA18EC1CB8006A55BC /* DVTSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSemaphore.h; sourceTree = "<group>"; };
-		A01CEBDB18EC1CB8006A55BC /* DVTSharedObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSharedObserver.h; sourceTree = "<group>"; };
-		A01CEBDC18EC1CB8006A55BC /* DVTShoeboxIDRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTShoeboxIDRecord.h; sourceTree = "<group>"; };
-		A01CEBDD18EC1CB8006A55BC /* DVTSigningIdentitySnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSigningIdentitySnapshot.h; sourceTree = "<group>"; };
-		A01CEBDE18EC1CB8006A55BC /* DVTSimpleDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSimpleDeserializer.h; sourceTree = "<group>"; };
-		A01CEBDF18EC1CB8006A55BC /* DVTSimplePlainTextDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSimplePlainTextDeserializer.h; sourceTree = "<group>"; };
-		A01CEBE018EC1CB8006A55BC /* DVTSimplePlainTextSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSimplePlainTextSerializer.h; sourceTree = "<group>"; };
-		A01CEBE118EC1CB8006A55BC /* DVTSimpleSerialization-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSimpleSerialization-Protocol.h"; sourceTree = "<group>"; };
-		A01CEBE218EC1CB8006A55BC /* DVTSimpleSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSimpleSerializer.h; sourceTree = "<group>"; };
-		A01CEBE318EC1CB8006A55BC /* DVTSimpleXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSimpleXMLWriter.h; sourceTree = "<group>"; };
-		A01CEBE418EC1CB8006A55BC /* DVTSourceCodeLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeLanguage.h; sourceTree = "<group>"; };
-		A01CEBE518EC1CB8006A55BC /* DVTSourceCodeSymbolKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeSymbolKind.h; sourceTree = "<group>"; };
-		A01CEBE618EC1CB8006A55BC /* DVTSourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModel.h; sourceTree = "<group>"; };
-		A01CEBE718EC1CB8006A55BC /* DVTSourceModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelItem.h; sourceTree = "<group>"; };
-		A01CEBE818EC1CB8006A55BC /* DVTSourceModelItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelItemMatcher.h; sourceTree = "<group>"; };
-		A01CEBE918EC1CB8006A55BC /* DVTSourceModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelParser.h; sourceTree = "<group>"; };
-		A01CEBEA18EC1CB8006A55BC /* DVTSourceModelParserInteriorProductionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelParserInteriorProductionRule.h; sourceTree = "<group>"; };
-		A01CEBEB18EC1CB8006A55BC /* DVTSourceModelParserProductionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelParserProductionRule.h; sourceTree = "<group>"; };
-		A01CEBEC18EC1CB8006A55BC /* DVTSourceModelParserProductionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelParserProductionState.h; sourceTree = "<group>"; };
-		A01CEBED18EC1CB8006A55BC /* DVTSourceNodeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceNodeTypes.h; sourceTree = "<group>"; };
-		A01CEBEE18EC1CB8006A55BC /* DVTSourceScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceScanner.h; sourceTree = "<group>"; };
-		A01CEBEF18EC1CB8006A55BC /* DVTSourceSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceSpecification.h; sourceTree = "<group>"; };
-		A01CEBF018EC1CB8006A55BC /* DVTSourceTokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceTokens.h; sourceTree = "<group>"; };
-		A01CEBF118EC1CB8006A55BC /* DVTStackBacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTStackBacktrace.h; sourceTree = "<group>"; };
-		A01CEBF218EC1CB8006A55BC /* DVTStateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTStateRepository.h; sourceTree = "<group>"; };
-		A01CEBF318EC1CB8006A55BC /* DVTStateToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTStateToken.h; sourceTree = "<group>"; };
-		A01CEBF418EC1CB8006A55BC /* DVTStringBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTStringBuffer.h; sourceTree = "<group>"; };
-		A01CEBF518EC1CB8006A55BC /* DVTSyntaxTypeSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSyntaxTypeSpecification.h; sourceTree = "<group>"; };
-		A01CEBF618EC1CB8006A55BC /* DVTSynthesizedFileDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSynthesizedFileDataType.h; sourceTree = "<group>"; };
-		A01CEBF718EC1CB8006A55BC /* DVTSysmonBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSysmonBridge.h; sourceTree = "<group>"; };
-		A01CEBF818EC1CB8006A55BC /* DVTSystemActivityToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSystemActivityToken.h; sourceTree = "<group>"; };
-		A01CEBF918EC1CB8006A55BC /* DVTSystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSystemEvents.h; sourceTree = "<group>"; };
-		A01CEBFA18EC1CB8006A55BC /* DVTSystemStatisticsMeasurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSystemStatisticsMeasurement.h; sourceTree = "<group>"; };
-		A01CEBFB18EC1CB8006A55BC /* DVTTarjanSCCVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTarjanSCCVertex.h; sourceTree = "<group>"; };
-		A01CEBFC18EC1CB8006A55BC /* DVTTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTask.h; sourceTree = "<group>"; };
-		A01CEBFD18EC1CB8006A55BC /* DVTTeamOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTeamOperationBase.h; sourceTree = "<group>"; };
-		A01CEBFE18EC1CB8006A55BC /* DVTTeamRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTeamRecord.h; sourceTree = "<group>"; };
-		A01CEBFF18EC1CB8006A55BC /* DVTTextDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextDocumentLocation.h; sourceTree = "<group>"; };
-		A01CEC0018EC1CB8006A55BC /* DVTTextFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextFinder.h; sourceTree = "<group>"; };
-		A01CEC0118EC1CB8006A55BC /* DVTTextlikeFindDescriptor-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTTextlikeFindDescriptor-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC0218EC1CB8006A55BC /* DVTTextPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextPreferences.h; sourceTree = "<group>"; };
-		A01CEC0318EC1CB8006A55BC /* DVTTextReplacable-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTTextReplacable-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC0418EC1CB8006A55BC /* DVTToolchain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTToolchain.h; sourceTree = "<group>"; };
-		A01CEC0518EC1CB8006A55BC /* DVTToolchainRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTToolchainRegistry.h; sourceTree = "<group>"; };
-		A01CEC0618EC1CB8006A55BC /* DVTToolsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTToolsInfo.h; sourceTree = "<group>"; };
-		A01CEC0718EC1CB8006A55BC /* DVTToolsVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTToolsVersion.h; sourceTree = "<group>"; };
-		A01CEC0818EC1CB8006A55BC /* DVTUnknownPrimitiveFileDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTUnknownPrimitiveFileDataType.h; sourceTree = "<group>"; };
-		A01CEC0918EC1CB8006A55BC /* DVTUpdateAppIDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTUpdateAppIDOperation.h; sourceTree = "<group>"; };
-		A01CEC0A18EC1CB8006A55BC /* DVTUpdatePortalDatabaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTUpdatePortalDatabaseOperation.h; sourceTree = "<group>"; };
-		A01CEC0B18EC1CB8006A55BC /* DVTUpdateProfileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTUpdateProfileOperation.h; sourceTree = "<group>"; };
-		A01CEC0C18EC1CB8006A55BC /* DVTUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTUserNotificationCenter.h; sourceTree = "<group>"; };
-		A01CEC0D18EC1CB8006A55BC /* DVTVariableItemMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTVariableItemMatcher.h; sourceTree = "<group>"; };
-		A01CEC0E18EC1CB8006A55BC /* DVTVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTVersion.h; sourceTree = "<group>"; };
-		A01CEC0F18EC1CB8006A55BC /* DVTWeakCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTWeakCallBack.h; sourceTree = "<group>"; };
-		A01CEC1018EC1CB8006A55BC /* DVTWeakInterposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTWeakInterposer.h; sourceTree = "<group>"; };
-		A01CEC1118EC1CB8006A55BC /* DVTWeakInterposer_ProxyHelperReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTWeakInterposer_ProxyHelperReference.h; sourceTree = "<group>"; };
-		A01CEC1218EC1CB8006A55BC /* DVTWeakInterposer_RuntimeWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTWeakInterposer_RuntimeWeakReference.h; sourceTree = "<group>"; };
-		A01CEC1318EC1CB8006A55BC /* DVTWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTWeakReference.h; sourceTree = "<group>"; };
-		A01CEC1418EC1CB8006A55BC /* DVTXMLArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTXMLArchiver.h; sourceTree = "<group>"; };
-		A01CEC1518EC1CB8006A55BC /* DVTXMLUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTXMLUnarchiver.h; sourceTree = "<group>"; };
-		A01CEC1618EC1CB8006A55BC /* DVTXMLUnarchiving-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTXMLUnarchiving-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC1718EC1CB8006A55BC /* DVTXPCServiceInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTXPCServiceInformation.h; sourceTree = "<group>"; };
-		A01CEC1818EC1CB8006A55BC /* DVTXPCServiceObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTXPCServiceObserver.h; sourceTree = "<group>"; };
-		A01CEC1918EC1CB8006A55BC /* NSArray-DVTDiffHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTDiffHashing.h"; sourceTree = "<group>"; };
-		A01CEC1A18EC1CB8006A55BC /* NSArray-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC1B18EC1CB8006A55BC /* NSArray-DVTMacroExpansion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTMacroExpansion.h"; sourceTree = "<group>"; };
-		A01CEC1C18EC1CB8006A55BC /* NSArray-DVTMacroExpansionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTMacroExpansionAdditions.h"; sourceTree = "<group>"; };
-		A01CEC1D18EC1CB8006A55BC /* NSArray-DVTObservingConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTObservingConvenience.h"; sourceTree = "<group>"; };
-		A01CEC1E18EC1CB8006A55BC /* NSArray-DVTRangeArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTRangeArrayAdditions.h"; sourceTree = "<group>"; };
-		A01CEC1F18EC1CB8006A55BC /* NSArray-DVTShellUtilitiesAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-DVTShellUtilitiesAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2018EC1CB8006A55BC /* NSCharacterSet-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2118EC1CB8006A55BC /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC2218EC1CB8006A55BC /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC2318EC1CB8006A55BC /* NSData-DVTDiffHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-DVTDiffHashing.h"; sourceTree = "<group>"; };
-		A01CEC2418EC1CB8006A55BC /* NSData-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2518EC1CB8006A55BC /* NSData-DVTNSDataStdIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-DVTNSDataStdIO.h"; sourceTree = "<group>"; };
-		A01CEC2618EC1CB8006A55BC /* NSData-DVTSecurityAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-DVTSecurityAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2718EC1CB8006A55BC /* NSDate-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2818EC1CB8006A55BC /* NSDictionary-ADCDownloadAuthenticationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-ADCDownloadAuthenticationResponse.h"; sourceTree = "<group>"; };
-		A01CEC2918EC1CB8006A55BC /* NSDictionary-DVTDiffHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DVTDiffHashing.h"; sourceTree = "<group>"; };
-		A01CEC2A18EC1CB8006A55BC /* NSDictionary-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2B18EC1CB8006A55BC /* NSDictionary-DVTMacroExpansionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DVTMacroExpansionAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2C18EC1CB8006A55BC /* NSError-DVTDeveloperAccountErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError-DVTDeveloperAccountErrors.h"; sourceTree = "<group>"; };
-		A01CEC2D18EC1CB8006A55BC /* NSError-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2E18EC1CB8006A55BC /* NSError-DVTSecurityAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError-DVTSecurityAdditions.h"; sourceTree = "<group>"; };
-		A01CEC2F18EC1CB8006A55BC /* NSFastEnumeration-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFastEnumeration-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC3018EC1CB8006A55BC /* NSFileHandle-DVTNSFileHandleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileHandle-DVTNSFileHandleAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3118EC1CB8006A55BC /* NSFileHandle-DVTTaskAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileHandle-DVTTaskAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3218EC1CB8006A55BC /* NSFileManager-DVTNSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager-DVTNSFileManagerAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3318EC1CB8006A55BC /* NSHTTPURLResponse-DVTHTTPCookies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse-DVTHTTPCookies.h"; sourceTree = "<group>"; };
-		A01CEC3418EC1CB8006A55BC /* NSInputStream-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInputStream-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3518EC1CB8006A55BC /* NSKeyedUnarchiverDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiverDelegate-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC3618EC1CB8006A55BC /* NSLocking-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLocking-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC3718EC1CB8006A55BC /* NSMapTable-DVTNSMapTableAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable-DVTNSMapTableAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3818EC1CB8006A55BC /* NSMutableArray-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3918EC1CB8006A55BC /* NSMutableCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableCopying-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC3A18EC1CB8006A55BC /* NSMutableData-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3B18EC1CB8006A55BC /* NSMutableData-DVTNSDataStdIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-DVTNSDataStdIO.h"; sourceTree = "<group>"; };
-		A01CEC3C18EC1CB8006A55BC /* NSMutableDictionary-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3D18EC1CB8006A55BC /* NSMutableSet-DVTNSMutableSetAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet-DVTNSMutableSetAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3E18EC1CB8006A55BC /* NSMutableString-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC3F18EC1CB8006A55BC /* NSMutableURLRequest-DVTHTTPCookies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest-DVTHTTPCookies.h"; sourceTree = "<group>"; };
-		A01CEC4018EC1CB9006A55BC /* NSNotificationCenter-DVTNSNotificationCenterAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter-DVTNSNotificationCenterAdditions.h"; sourceTree = "<group>"; };
-		A01CEC4118EC1CB9006A55BC /* NSNumber-DVTDiffHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-DVTDiffHashing.h"; sourceTree = "<group>"; };
-		A01CEC4218EC1CB9006A55BC /* NSObject-Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Deprecated.h"; sourceTree = "<group>"; };
-		A01CEC4318EC1CB9006A55BC /* NSObject-DVTArcSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTArcSupport.h"; sourceTree = "<group>"; };
-		A01CEC4418EC1CB9006A55BC /* NSObject-DVTAssertionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTAssertionSupport.h"; sourceTree = "<group>"; };
-		A01CEC4518EC1CB9006A55BC /* NSObject-DVTExtraXMArchiveDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTExtraXMArchiveDataAdditions.h"; sourceTree = "<group>"; };
-		A01CEC4618EC1CB9006A55BC /* NSObject-DVTInvalidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTInvalidation.h"; sourceTree = "<group>"; };
-		A01CEC4718EC1CB9006A55BC /* NSObject-DVTInvalidation2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTInvalidation2.h"; sourceTree = "<group>"; };
-		A01CEC4818EC1CB9006A55BC /* NSObject-DVTInvalidation2Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTInvalidation2Private.h"; sourceTree = "<group>"; };
-		A01CEC4918EC1CB9006A55BC /* NSObject-DVTKVCMutableCollectionPropertySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTKVCMutableCollectionPropertySupport.h"; sourceTree = "<group>"; };
-		A01CEC4A18EC1CB9006A55BC /* NSObject-DVTKVOAssertionValidationMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTKVOAssertionValidationMethods.h"; sourceTree = "<group>"; };
-		A01CEC4B18EC1CB9006A55BC /* NSObject-DVTNSMutableCopyingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTNSMutableCopyingAdditions.h"; sourceTree = "<group>"; };
-		A01CEC4C18EC1CB9006A55BC /* NSObject-DVTNSMutableCopyingAdditions_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTNSMutableCopyingAdditions_Internal.h"; sourceTree = "<group>"; };
-		A01CEC4D18EC1CB9006A55BC /* NSObject-DVTNSRunLoopAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTNSRunLoopAdditions.h"; sourceTree = "<group>"; };
-		A01CEC4E18EC1CB9006A55BC /* NSObject-DVTObjectDeallocationMonitorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTObjectDeallocationMonitorAdditions.h"; sourceTree = "<group>"; };
-		A01CEC4F18EC1CB9006A55BC /* NSObject-DVTObservingConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTObservingConvenience.h"; sourceTree = "<group>"; };
-		A01CEC5018EC1CB9006A55BC /* NSObject-DVTPropertyLinking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTPropertyLinking.h"; sourceTree = "<group>"; };
-		A01CEC5118EC1CB9006A55BC /* NSObject-DVTSelectorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTSelectorAdditions.h"; sourceTree = "<group>"; };
-		A01CEC5218EC1CB9006A55BC /* NSObject-DVTSharedObserverAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTSharedObserverAccess.h"; sourceTree = "<group>"; };
-		A01CEC5318EC1CB9006A55BC /* NSObject-DVTSimpleSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTSimpleSerialization.h"; sourceTree = "<group>"; };
-		A01CEC5418EC1CB9006A55BC /* NSObject-DVTXMLArchiving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTXMLArchiving.h"; sourceTree = "<group>"; };
-		A01CEC5518EC1CB9006A55BC /* NSObject-DVTXMLUnarchivingPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-DVTXMLUnarchivingPartial.h"; sourceTree = "<group>"; };
-		A01CEC5618EC1CB9006A55BC /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC5718EC1CB9006A55BC /* NSOutputStream-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOutputStream-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC5818EC1CB9006A55BC /* NSProcessInfo-DVTNSProcessInfoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo-DVTNSProcessInfoAdditions.h"; sourceTree = "<group>"; };
-		A01CEC5918EC1CB9006A55BC /* NSPropertyListSerialization-DVTNSPropertyListSerializationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPropertyListSerialization-DVTNSPropertyListSerializationAdditions.h"; sourceTree = "<group>"; };
-		A01CEC5A18EC1CB9006A55BC /* NSRunLoop-DVTNSRunLoopAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop-DVTNSRunLoopAdditions.h"; sourceTree = "<group>"; };
-		A01CEC5B18EC1CB9006A55BC /* NSSet-DVTNSSetAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet-DVTNSSetAdditions.h"; sourceTree = "<group>"; };
-		A01CEC5C18EC1CB9006A55BC /* NSString-DVTDiffHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTDiffHashing.h"; sourceTree = "<group>"; };
-		A01CEC5D18EC1CB9006A55BC /* NSString-DVTFileSystemRepresentationProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTFileSystemRepresentationProviding.h"; sourceTree = "<group>"; };
-		A01CEC5E18EC1CB9006A55BC /* NSString-DVTFoundationANSIText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTFoundationANSIText.h"; sourceTree = "<group>"; };
-		A01CEC5F18EC1CB9006A55BC /* NSString-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6018EC1CB9006A55BC /* NSString-DVTMacroDefinitionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTMacroDefinitionAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6118EC1CB9006A55BC /* NSString-DVTMacroExpansion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTMacroExpansion.h"; sourceTree = "<group>"; };
-		A01CEC6218EC1CB9006A55BC /* NSString-DVTMacroExpansionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTMacroExpansionAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6318EC1CB9006A55BC /* NSString-DVTMacroNameStringCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-DVTMacroNameStringCompatibility.h"; sourceTree = "<group>"; };
-		A01CEC6418EC1CB9006A55BC /* NSThread-DVTObjectAllocationTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread-DVTObjectAllocationTracking.h"; sourceTree = "<group>"; };
-		A01CEC6518EC1CB9006A55BC /* NSURL-DVTNSURLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL-DVTNSURLAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6618EC1CB9006A55BC /* NSURL-DVTSecurityAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL-DVTSecurityAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6718EC1CB9006A55BC /* NSURLConnectionDataDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnectionDataDelegate-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC6818EC1CB9006A55BC /* NSURLConnectionDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnectionDelegate-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC6918EC1CB9006A55BC /* NSURLProtectionSpace-DVTSecurityAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtectionSpace-DVTSecurityAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6A18EC1CB9006A55BC /* NSUserDefaults-DVTNSUserDefaultsAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults-DVTNSUserDefaultsAdditions.h"; sourceTree = "<group>"; };
-		A01CEC6B18EC1CB9006A55BC /* NSUserNotificationCenterDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserNotificationCenterDelegate-Protocol.h"; sourceTree = "<group>"; };
-		A01CEC6C18EC1CB9006A55BC /* NSXMLElement-DVTFoundationClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement-DVTFoundationClassAdditions.h"; sourceTree = "<group>"; };
+		0C4AC3B54C1C4664BF51AC76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		386551249FEE4E30BF6FE12B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A06A7E5A18E40D9C0039BB1B /* RevealPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevealPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A06A7E6118E40D9C0039BB1B /* RevealPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevealPlugin-Info.plist"; sourceTree = "<group>"; };
@@ -509,8 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01CEC6D18EC1E75006A55BC /* IDEFoundation.framework in Frameworks */,
 				A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */,
+				B488BB64504A4B39931AFE54 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,508 +42,8 @@
 		A01CEA8018EC0F90006A55BC /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				A01CEA8118EC0F90006A55BC /* jrswizzle */,
 			);
 			path = Vendors;
-			sourceTree = "<group>";
-		};
-		A01CEA8118EC0F90006A55BC /* jrswizzle */ = {
-			isa = PBXGroup;
-			children = (
-				A01CEA8218EC0F90006A55BC /* JRSwizzle.h */,
-				A01CEA8318EC0F90006A55BC /* JRSwizzle.m */,
-			);
-			path = jrswizzle;
-			sourceTree = "<group>";
-		};
-		A01CEA8A18EC16F4006A55BC /* Plugins */ = {
-			isa = PBXGroup;
-			children = (
-				A01CEA9018EC19CB006A55BC /* IDEBuildTask+RPPlugin.h */,
-				A01CEA9118EC19CB006A55BC /* IDEBuildTask+RPPlugin.m */,
-			);
-			path = Plugins;
-			sourceTree = "<group>";
-		};
-		A01CEA9318EC1CB7006A55BC /* DVTFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				A01CEA9418EC1CB7006A55BC /* _DVTAsynchronousRequest.h */,
-				A01CEA9518EC1CB7006A55BC /* _DVTCancellationBlockToken.h */,
-				A01CEA9618EC1CB7006A55BC /* _DVTDeallocationMonitorInfo.h */,
-				A01CEA9718EC1CB7006A55BC /* _DVTDeviceLocatorTracker.h */,
-				A01CEA9818EC1CB7006A55BC /* _DVTDiffHashingDictionaryDiffHashContext.h */,
-				A01CEA9918EC1CB7006A55BC /* _DVTDiffLineDataSourceConsistentCopy.h */,
-				A01CEA9A18EC1CB7006A55BC /* _DVTDisallowFinishToken.h */,
-				A01CEA9B18EC1CB7006A55BC /* _DVTErrorRecoveryHandler.h */,
-				A01CEA9C18EC1CB7006A55BC /* _DVTFilePathAssoc.h */,
-				A01CEA9D18EC1CB7006A55BC /* _DVTFoundationPrivateClassForFindingBundle.h */,
-				A01CEA9E18EC1CB7006A55BC /* _DVTWeakInterposerHelper.h */,
-				A01CEA9F18EC1CB7006A55BC /* _DVTXMLParsingState.h */,
-				A01CEAA018EC1CB7006A55BC /* CDStructures.h */,
-				A01CEAA118EC1CB7006A55BC /* DataGatheringNSURLConnectionDelegate.h */,
-				A01CEAA218EC1CB7006A55BC /* DataWritingNSURLConnectionDelegate.h */,
-				A01CEAA318EC1CB7006A55BC /* DTDKAddAppIDService.h */,
-				A01CEAA418EC1CB7006A55BC /* DTDKAddDeviceService.h */,
-				A01CEAA518EC1CB7006A55BC /* DTDKAddShoeboxIDService.h */,
-				A01CEAA618EC1CB7006A55BC /* DTDKCertificateAuthorityService.h */,
-				A01CEAA718EC1CB7006A55BC /* DTDKCertificateService.h */,
-				A01CEAA818EC1CB7006A55BC /* DTDKCreateProvisioningProfileService.h */,
-				A01CEAA918EC1CB7006A55BC /* DTDKDeleteAppIDService.h */,
-				A01CEAAA18EC1CB7006A55BC /* DTDKDeleteProvisioningProfileService.h */,
-				A01CEAAB18EC1CB7006A55BC /* DTDKDeleteShoeboxIDService.h */,
-				A01CEAAC18EC1CB7006A55BC /* DTDKDeveloperInfoService.h */,
-				A01CEAAD18EC1CB7006A55BC /* DTDKDeveloperPortalService.h */,
-				A01CEAAE18EC1CB7006A55BC /* DTDKDownloadCertService.h */,
-				A01CEAAF18EC1CB7006A55BC /* DTDKDownloadProvisioningProfileService.h */,
-				A01CEAB018EC1CB7006A55BC /* DTDKFetchAppIDService.h */,
-				A01CEAB118EC1CB7006A55BC /* DTDKListAppIDsService.h */,
-				A01CEAB218EC1CB7006A55BC /* DTDKListCertService.h */,
-				A01CEAB318EC1CB7006A55BC /* DTDKListCSRsService.h */,
-				A01CEAB418EC1CB7006A55BC /* DTDKListDeviceService.h */,
-				A01CEAB518EC1CB7006A55BC /* DTDKListEverythingService.h */,
-				A01CEAB618EC1CB7006A55BC /* DTDKListProvisioningProfileService.h */,
-				A01CEAB718EC1CB7006A55BC /* DTDKListShoeboxIDsService.h */,
-				A01CEAB818EC1CB7006A55BC /* DTDKListTeamService.h */,
-				A01CEAB918EC1CB7006A55BC /* DTDKRemoveDeviceService.h */,
-				A01CEABA18EC1CB7006A55BC /* DTDKRenameDeviceService.h */,
-				A01CEABB18EC1CB7006A55BC /* DTDKRenewProvisioningProfileService.h */,
-				A01CEABC18EC1CB7006A55BC /* DTDKRevokeCertService.h */,
-				A01CEABD18EC1CB7006A55BC /* DTDKSubmitCSRService.h */,
-				A01CEABE18EC1CB7006A55BC /* DTDKTeamBasedService.h */,
-				A01CEABF18EC1CB7006A55BC /* DTDKUpdateAppIDService.h */,
-				A01CEAC018EC1CB7006A55BC /* DVTAbstractMacDevice.h */,
-				A01CEAC118EC1CB7006A55BC /* DVTActivationRule.h */,
-				A01CEAC218EC1CB7006A55BC /* DVTAddAppIDOperation.h */,
-				A01CEAC318EC1CB7006A55BC /* DVTAddDeviceOperation.h */,
-				A01CEAC418EC1CB7006A55BC /* DVTAppIDRecord.h */,
-				A01CEAC518EC1CB7006A55BC /* DVTAppleIDBasedDeveloperAccount.h */,
-				A01CEAC618EC1CB7006A55BC /* DVTArchitecture.h */,
-				A01CEAC718EC1CB7006A55BC /* DVTArrayObservingBlockToken.h */,
-				A01CEAC818EC1CB7006A55BC /* DVTAssertingWeakInterposer_ProxyHelperReference.h */,
-				A01CEAC918EC1CB7006A55BC /* DVTAssertingWeakInterposer_RuntimeWeakReference.h */,
-				A01CEACA18EC1CB7006A55BC /* DVTAssertionHandler.h */,
-				A01CEACB18EC1CB7006A55BC /* DVTAssertionHandling-Protocol.h */,
-				A01CEACC18EC1CB7006A55BC /* DVTAutosynchingProxyArray.h */,
-				A01CEACD18EC1CB7006A55BC /* DVTBlockScanner.h */,
-				A01CEACE18EC1CB7006A55BC /* DVTBloomFilter.h */,
-				A01CEACF18EC1CB7006A55BC /* DVTBuildVersion.h */,
-				A01CEAD018EC1CB7006A55BC /* DVTByteBuffer.h */,
-				A01CEAD118EC1CB7006A55BC /* DVTCancellable-Protocol.h */,
-				A01CEAD218EC1CB7006A55BC /* DVTCancellationBlockCompletion-Protocol.h */,
-				A01CEAD318EC1CB7006A55BC /* DVTCategoryItemMatcher.h */,
-				A01CEAD418EC1CB7006A55BC /* DVTCertBasedDeveloperAccount.h */,
-				A01CEAD518EC1CB7006A55BC /* DVTCertificateRecord.h */,
-				A01CEAD618EC1CB7006A55BC /* DVTCertificateUtilities.h */,
-				A01CEAD718EC1CB7006A55BC /* DVTCharStream.h */,
-				A01CEAD818EC1CB7006A55BC /* DVTCheapReusableSubstring.h */,
-				A01CEAD918EC1CB7006A55BC /* DVTClassItemMatcher.h */,
-				A01CEADA18EC1CB7006A55BC /* DVTCodesignParameterSnapshot.h */,
-				A01CEADB18EC1CB7006A55BC /* DVTCodesignResolver.h */,
-				A01CEADC18EC1CB7006A55BC /* DVTCollectCertificateFailuresOperation.h */,
-				A01CEADD18EC1CB7006A55BC /* DVTCommandLineOptionDefinition.h */,
-				A01CEADE18EC1CB7006A55BC /* DVTCommandLineParser.h */,
-				A01CEADF18EC1CB7006A55BC /* DVTCommandLineTool.h */,
-				A01CEAE018EC1CB7006A55BC /* DVTComparisonDocumentLocation.h */,
-				A01CEAE118EC1CB7006A55BC /* DVTConcreteHashTable.h */,
-				A01CEAE218EC1CB7006A55BC /* DVTConcreteMapTable.h */,
-				A01CEAE318EC1CB7006A55BC /* DVTConcreteMapTableValueEnumerator.h */,
-				A01CEAE418EC1CB7006A55BC /* DVTConcretePointerArray.h */,
-				A01CEAE518EC1CB7006A55BC /* DVTConcretePointerFunctions.h */,
-				A01CEAE618EC1CB7006A55BC /* DVTConfinementService.h */,
-				A01CEAE718EC1CB7006A55BC /* DVTConfinementServiceConnection.h */,
-				A01CEAE818EC1CB7006A55BC /* DVTConsoleLogger.h */,
-				A01CEAE918EC1CB7006A55BC /* DVTConsoleOutputFileHandle.h */,
-				A01CEAEA18EC1CB7006A55BC /* DVTCopyOnWriteMutableArray.h */,
-				A01CEAEB18EC1CB7006A55BC /* DVTCPlusPlusSourceModelParser.h */,
-				A01CEAEC18EC1CB7006A55BC /* DVTCreateProfileOperation.h */,
-				A01CEAED18EC1CB7006A55BC /* DVTCSourceModelParser.h */,
-				A01CEAEE18EC1CB7006A55BC /* DVTCustomDataOwnership.h */,
-				A01CEAEF18EC1CB7006A55BC /* DVTCustomDataSpecifier.h */,
-				A01CEAF018EC1CB7006A55BC /* DVTCustomDataStoring-Protocol.h */,
-				A01CEAF118EC1CB7006A55BC /* DVTDeclaredPrimitiveFileDataType.h */,
-				A01CEAF218EC1CB7006A55BC /* DVTDeveloperAccount.h */,
-				A01CEAF318EC1CB7006A55BC /* DVTDeveloperAccountCredentials.h */,
-				A01CEAF418EC1CB7006A55BC /* DVTDeveloperAccountManager.h */,
-				A01CEAF518EC1CB7006A55BC /* DVTDeveloperAccountSession.h */,
-				A01CEAF618EC1CB7006A55BC /* DVTDeveloperInfoOperation.h */,
-				A01CEAF718EC1CB7006A55BC /* DVTDeveloperPaths.h */,
-				A01CEAF818EC1CB7006A55BC /* DVTDeveloperPortalDatabase.h */,
-				A01CEAF918EC1CB7006A55BC /* DVTDeveloperPortalResponseWrapper.h */,
-				A01CEAFA18EC1CB7006A55BC /* DVTDeveloperPortalServiceConnection.h */,
-				A01CEAFB18EC1CB7006A55BC /* DVTDeveloperProfile.h */,
-				A01CEAFC18EC1CB7006A55BC /* DVTDeveloperProfileAccountProvider-Protocol.h */,
-				A01CEAFD18EC1CB7006A55BC /* DVTDeveloperRecord.h */,
-				A01CEAFE18EC1CB7006A55BC /* DVTDevice.h */,
-				A01CEAFF18EC1CB7006A55BC /* DVTDeviceCapability.h */,
-				A01CEB0018EC1CB7006A55BC /* DVTDeviceCapabilityMatchAnythingObject.h */,
-				A01CEB0118EC1CB7006A55BC /* DVTDeviceLocator.h */,
-				A01CEB0218EC1CB7006A55BC /* DVTDeviceManager.h */,
-				A01CEB0318EC1CB7006A55BC /* DVTDeviceRecord.h */,
-				A01CEB0418EC1CB7006A55BC /* DVTDeviceService.h */,
-				A01CEB0518EC1CB7006A55BC /* DVTDeviceSupportFiles.h */,
-				A01CEB0618EC1CB7006A55BC /* DVTDeviceType.h */,
-				A01CEB0718EC1CB7006A55BC /* DVTDiffBinaryDataSource.h */,
-				A01CEB0818EC1CB7006A55BC /* DVTDiffCharacterDataSource.h */,
-				A01CEB0918EC1CB7006A55BC /* DVTDiffContext.h */,
-				A01CEB0A18EC1CB7006A55BC /* DVTDiffDataSource.h */,
-				A01CEB0B18EC1CB7006A55BC /* DVTDiffDescriptor.h */,
-				A01CEB0C18EC1CB7006A55BC /* DVTDiffHashing-Protocol.h */,
-				A01CEB0D18EC1CB7006A55BC /* DVTDiffLineDataSource.h */,
-				A01CEB0E18EC1CB7006A55BC /* DVTDiffWordDataSource.h */,
-				A01CEB0F18EC1CB7006A55BC /* DVTDirectoryBasedCustomDataStore.h */,
-				A01CEB1018EC1CB7006A55BC /* DVTDispatchLock.h */,
-				A01CEB1118EC1CB7006A55BC /* DVTDocumentFragmentFilter.h */,
-				A01CEB1218EC1CB7006A55BC /* DVTDocumentLocation.h */,
-				A01CEB1318EC1CB7006A55BC /* DVTDotSeparatedVersion.h */,
-				A01CEB1418EC1CB7006A55BC /* DVTDownloadable.h */,
-				A01CEB1518EC1CB7006A55BC /* DVTDownloadable_PKInstallClientDelegate.h */,
-				A01CEB1618EC1CB7006A55BC /* DVTDownloadableDependency.h */,
-				A01CEB1718EC1CB7006A55BC /* DVTDownloadableIndex.h */,
-				A01CEB1818EC1CB7006A55BC /* DVTDownloadableInstallationHelper-Protocol.h */,
-				A01CEB1918EC1CB7006A55BC /* DVTDownloadableManager.h */,
-				A01CEB1A18EC1CB7006A55BC /* DVTDownloadableManagerIOCache.h */,
-				A01CEB1B18EC1CB7006A55BC /* DVTDownloadableOperation.h */,
-				A01CEB1C18EC1CB7006A55BC /* DVTDownloadableOperationDownload.h */,
-				A01CEB1D18EC1CB7006A55BC /* DVTDownloadableOperationRefreshIndex.h */,
-				A01CEB1E18EC1CB7006A55BC /* DVTDownloadCertificateOperation.h */,
-				A01CEB1F18EC1CB7006A55BC /* DVTDownloadDeveloperIDCertificateAuthorityOperation.h */,
-				A01CEB2018EC1CB7006A55BC /* DVTDownloadProfileOperation.h */,
-				A01CEB2118EC1CB7006A55BC /* DVTDownloadTeamProfileOperation.h */,
-				A01CEB2218EC1CB7006A55BC /* DVTDownloadWWDRCertificateAuthorityOperation.h */,
-				A01CEB2318EC1CB7006A55BC /* DVTDynamicLogController.h */,
-				A01CEB2418EC1CB7006A55BC /* DVTDynamicPrimitiveFileDataType.h */,
-				A01CEB2518EC1CB7006A55BC /* DVTExtension.h */,
-				A01CEB2618EC1CB7006A55BC /* DVTExtensionAttributeDescription.h */,
-				A01CEB2718EC1CB7006A55BC /* DVTExtensionElementDescription.h */,
-				A01CEB2818EC1CB7006A55BC /* DVTExtensionParameter.h */,
-				A01CEB2918EC1CB7006A55BC /* DVTExtensionPoint.h */,
-				A01CEB2A18EC1CB7006A55BC /* DVTExtensionPropertyDescription.h */,
-				A01CEB2B18EC1CB7006A55BC /* DVTExtraXMLArchiveData.h */,
-				A01CEB2C18EC1CB7006A55BC /* DVTExtraXMLAttribute.h */,
-				A01CEB2D18EC1CB7006A55BC /* DVTExtraXMLElement.h */,
-				A01CEB2E18EC1CB7006A55BC /* DVTFetchOrCreateAppIDOperation.h */,
-				A01CEB2F18EC1CB7006A55BC /* DVTFileDataType.h */,
-				A01CEB3018EC1CB7006A55BC /* DVTFileDataTypeDetection.h */,
-				A01CEB3118EC1CB7006A55BC /* DVTFileDataTypeDetectionMagicCache.h */,
-				A01CEB3218EC1CB7006A55BC /* DVTFileDataTypeDetector-Protocol.h */,
-				A01CEB3318EC1CB7006A55BC /* DVTFileLogger.h */,
-				A01CEB3418EC1CB7006A55BC /* DVTFilePath.h */,
-				A01CEB3518EC1CB7006A55BC /* DVTFilePathEventWatcher.h */,
-				A01CEB3618EC1CB7006A55BC /* DVTFileSystemRepresentationProviding-Protocol.h */,
-				A01CEB3718EC1CB7006A55BC /* DVTFileSystemVNode.h */,
-				A01CEB3818EC1CB7006A55BC /* DVTFileWrapper.h */,
-				A01CEB3918EC1CB7006A55BC /* DVTFindDescriptor.h */,
-				A01CEB3A18EC1CB7006A55BC /* DVTFindRegularExpressionDescriptor.h */,
-				A01CEB3B18EC1CB7006A55BC /* DVTFindRegularExpressionResult.h */,
-				A01CEB3C18EC1CB7006A55BC /* DVTFindResult.h */,
-				A01CEB3D18EC1CB7006A55BC /* DVTFindTextualDescriptor.h */,
-				A01CEB3E18EC1CB7006A55BC /* DVTFirstLaunchPackage.h */,
-				A01CEB3F18EC1CB7006A55BC /* DVTFirstLaunchPackageInstallationHelper.h */,
-				A01CEB4018EC1CB7006A55BC /* DVTFunctionItemMatcher.h */,
-				A01CEB4118EC1CB7006A55BC /* DVTFuture.h */,
-				A01CEB4218EC1CB7006A55BC /* DVTGeneratedContentProvider.h */,
-				A01CEB4318EC1CB7006A55BC /* DVTGlobalCustomDataStore.h */,
-				A01CEB4418EC1CB7006A55BC /* DVTHashTable.h */,
-				A01CEB4518EC1CB7006A55BC /* DVTHTMLEntityScanner.h */,
-				A01CEB4618EC1CB7006A55BC /* DVTHTMLScanner.h */,
-				A01CEB4718EC1CB7006A55BC /* DVTInvalidation-Protocol.h */,
-				A01CEB4818EC1CB7006A55BC /* DVTInvalidationMixIn.h */,
-				A01CEB4918EC1CB7006A55BC /* DVTInvalidExtension.h */,
-				A01CEB4A18EC1CB7006A55BC /* DVTKeywordScanner.h */,
-				A01CEB4B18EC1CB7006A55BC /* DVTKnownStringMapping.h */,
-				A01CEB4C18EC1CB7006A55BC /* DVTKVCMethodStyle.h */,
-				A01CEB4D18EC1CB7006A55BC /* DVTKVOConditionValidator.h */,
-				A01CEB4E18EC1CB7006A55BC /* DVTLanguageSpecification.h */,
-				A01CEB4F18EC1CB7006A55BC /* DVTLibraryFragmentFilter.h */,
-				A01CEB5018EC1CB7006A55BC /* DVTLicenseAgreementHelper.h */,
-				A01CEB5118EC1CB7006A55BC /* DVTListAppIDsOperation.h */,
-				A01CEB5218EC1CB7006A55BC /* DVTListCertsOperation.h */,
-				A01CEB5318EC1CB7006A55BC /* DVTListDevicesOperation.h */,
-				A01CEB5418EC1CB7006A55BC /* DVTListEverythingOperation.h */,
-				A01CEB5518EC1CB7006A55BC /* DVTListProvisioningProfilesOperation.h */,
-				A01CEB5618EC1CB7006A55BC /* DVTListShoeboxIDsOperation.h */,
-				A01CEB5718EC1CB7006A55BC /* DVTListTeamOperation.h */,
-				A01CEB5818EC1CB7006A55BC /* DVTLocalComputer.h */,
-				A01CEB5918EC1CB7006A55BC /* DVTLocalComputerLocator.h */,
-				A01CEB5A18EC1CB7006A55BC /* DVTLocale.h */,
-				A01CEB5B18EC1CB7006A55BC /* DVTLocalProcessInformation.h */,
-				A01CEB5C18EC1CB7006A55BC /* DVTLogAspect.h */,
-				A01CEB5D18EC1CB7006A55BC /* DVTLogger.h */,
-				A01CEB5E18EC1CB7006A55BC /* DVTMacroAssignmentInfo.h */,
-				A01CEB5F18EC1CB7006A55BC /* DVTMacroDefinitionCondition.h */,
-				A01CEB6018EC1CB7006A55BC /* DVTMacroDefinitionConditionParameter.h */,
-				A01CEB6118EC1CB7006A55BC /* DVTMacroDefinitionConditionSet.h */,
-				A01CEB6218EC1CB7006A55BC /* DVTMacroDefinitionTable.h */,
-				A01CEB6318EC1CB7006A55BC /* DVTMacroExpansion-Protocol.h */,
-				A01CEB6418EC1CB7006A55BC /* DVTMacroExpansionBlock.h */,
-				A01CEB6518EC1CB7006A55BC /* DVTMacroExpansionIntegerMetric.h */,
-				A01CEB6618EC1CB7006A55BC /* DVTMacroExpansionOperator.h */,
-				A01CEB6718EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator.h */,
-				A01CEB6818EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_base.h */,
-				A01CEB6918EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_dir.h */,
-				A01CEB6A18EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_file.h */,
-				A01CEB6B18EC1CB7006A55BC /* DVTMacroExpansionReplacementOperator_suffix.h */,
-				A01CEB6C18EC1CB7006A55BC /* DVTMacroExpansionReplacementOperatorWithParseError.h */,
-				A01CEB6D18EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator.h */,
-				A01CEB6E18EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_base.h */,
-				A01CEB6F18EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_dir.h */,
-				A01CEB7018EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_file.h */,
-				A01CEB7118EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_identifier.h */,
-				A01CEB7218EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_lower.h */,
-				A01CEB7318EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_quote.h */,
-				A01CEB7418EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_rfc1034identifier.h */,
-				A01CEB7518EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_standardizepath.h */,
-				A01CEB7618EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_suffix.h */,
-				A01CEB7718EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperator_upper.h */,
-				A01CEB7818EC1CB7006A55BC /* DVTMacroExpansionRetrievalOperatorWithParseError.h */,
-				A01CEB7918EC1CB7006A55BC /* DVTMacroExpansionScope.h */,
-				A01CEB7A18EC1CB7006A55BC /* DVTMacroExpansionStatistics.h */,
-				A01CEB7B18EC1CB7006A55BC /* DVTMacroExpansionString.h */,
-				A01CEB7C18EC1CB7006A55BC /* DVTMacroExpansionString_Concatenation.h */,
-				A01CEB7D18EC1CB7006A55BC /* DVTMacroExpansionString_Literal.h */,
-				A01CEB7E18EC1CB7006A55BC /* DVTMacroExpansionString_StringSubstitution.h */,
-				A01CEB7F18EC1CB7006A55BC /* DVTMacroExpansionString_Substitution.h */,
-				A01CEB8018EC1CB7006A55BC /* DVTMacroExpansionStringList.h */,
-				A01CEB8118EC1CB7006A55BC /* DVTMacroExpansionStringList_Literal.h */,
-				A01CEB8218EC1CB7006A55BC /* DVTMacroExpansionStringList_NonLiteral.h */,
-				A01CEB8318EC1CB7006A55BC /* DVTMacroNameRegistry.h */,
-				A01CEB8418EC1CB7006A55BC /* DVTMacroNameRegistryRegistration.h */,
-				A01CEB8518EC1CB7006A55BC /* DVTMacroNameString.h */,
-				A01CEB8618EC1CB7006A55BC /* DVTMapTable.h */,
-				A01CEB8718EC1CB7006A55BC /* DVTMemorySnapshot.h */,
-				A01CEB8818EC1CB7006A55BC /* DVTMessageTrace.h */,
-				A01CEB8918EC1CB7006A55BC /* DVTMethodItemMatcher.h */,
-				A01CEB8A18EC1CB7006A55BC /* DVTMixIn.h */,
-				A01CEB8B18EC1CB7006A55BC /* DVTModelObject-Protocol.h */,
-				A01CEB8C18EC1CB7006A55BC /* DVTModelObject.h */,
-				A01CEB8D18EC1CB7006A55BC /* DVTModelObjectGraph.h */,
-				A01CEB8E18EC1CB7006A55BC /* DVTModelTree.h */,
-				A01CEB8F18EC1CB7006A55BC /* DVTModelTreeNode.h */,
-				A01CEB9018EC1CB7006A55BC /* DVTMountedFileSystem.h */,
-				A01CEB9118EC1CB7006A55BC /* DVTMTReport.h */,
-				A01CEB9218EC1CB7006A55BC /* DVTMutableKnownStringSet.h */,
-				A01CEB9318EC1CB7006A55BC /* DVTMutableOrderedDictionary.h */,
-				A01CEB9418EC1CB7006A55BC /* DVTMutableOrderedSet.h */,
-				A01CEB9518EC1CB7006A55BC /* DVTMutableRangeArray.h */,
-				A01CEB9618EC1CB7006A55BC /* DVTNotificationToken.h */,
-				A01CEB9718EC1CB7006A55BC /* DVTNumberScanner.h */,
-				A01CEB9818EC1CB7006A55BC /* DVTObjCPlusPlusSourceModelParser.h */,
-				A01CEB9918EC1CB7006A55BC /* DVTObjCSourceModelParser.h */,
-				A01CEB9A18EC1CB7006A55BC /* DVTObjectDeallocationMonitor.h */,
-				A01CEB9B18EC1CB7006A55BC /* DVTObservableObjectProxy.h */,
-				A01CEB9C18EC1CB7006A55BC /* DVTObserveXPCServicesProtocol-Protocol.h */,
-				A01CEB9D18EC1CB7006A55BC /* DVTObserveXPCServicesProtocol_Callback-Protocol.h */,
-				A01CEB9E18EC1CB7006A55BC /* DVTObservingBlockToken.h */,
-				A01CEB9F18EC1CB7006A55BC /* DVTObservingToken.h */,
-				A01CEBA018EC1CB7006A55BC /* DVTObsoleteUnarchivedObjectPlaceholder.h */,
-				A01CEBA118EC1CB7006A55BC /* DVTOneShotBlock.h */,
-				A01CEBA218EC1CB8006A55BC /* DVTOperation.h */,
-				A01CEBA318EC1CB8006A55BC /* DVTOperationGroup.h */,
-				A01CEBA418EC1CB8006A55BC /* DVTOSVersion.h */,
-				A01CEBA518EC1CB8006A55BC /* DVTPatienceDiffContext.h */,
-				A01CEBA618EC1CB8006A55BC /* DVTPerformanceCheckpoint.h */,
-				A01CEBA718EC1CB8006A55BC /* DVTPerformanceMetric.h */,
-				A01CEBA818EC1CB8006A55BC /* DVTPerformanceStatistic.h */,
-				A01CEBA918EC1CB8006A55BC /* DVTPerformanceTestLogger_TimeForWork.h */,
-				A01CEBAA18EC1CB8006A55BC /* DVTPerformanceTestOutput.h */,
-				A01CEBAB18EC1CB8006A55BC /* DVTPerformanceTestParser-Protocol.h */,
-				A01CEBAC18EC1CB8006A55BC /* DVTPerformanceTestResult.h */,
-				A01CEBAD18EC1CB8006A55BC /* DVTPipe.h */,
-				A01CEBAE18EC1CB8006A55BC /* DVTPlatform.h */,
-				A01CEBAF18EC1CB8006A55BC /* DVTPlatformFamily.h */,
-				A01CEBB018EC1CB8006A55BC /* DVTPlugIn.h */,
-				A01CEBB118EC1CB8006A55BC /* DVTPlugInLocalizedString.h */,
-				A01CEBB218EC1CB8006A55BC /* DVTPlugInLocator.h */,
-				A01CEBB318EC1CB8006A55BC /* DVTPlugInManager.h */,
-				A01CEBB418EC1CB8006A55BC /* DVTPlugInScanRecord.h */,
-				A01CEBB518EC1CB8006A55BC /* DVTPointerArray.h */,
-				A01CEBB618EC1CB8006A55BC /* DVTPointerFunctions.h */,
-				A01CEBB718EC1CB8006A55BC /* DVTPortalInfoOperation.h */,
-				A01CEBB818EC1CB8006A55BC /* DVTPortalOperation.h */,
-				A01CEBB918EC1CB8006A55BC /* DVTPortalOperationToken.h */,
-				A01CEBBA18EC1CB8006A55BC /* DVTPreprocessorItemMatcher.h */,
-				A01CEBBB18EC1CB8006A55BC /* DVTPrimitiveFileDataType.h */,
-				A01CEBBC18EC1CB8006A55BC /* DVTProcessInformation.h */,
-				A01CEBBD18EC1CB8006A55BC /* DVTProgressReporting-Protocol.h */,
-				A01CEBBE18EC1CB8006A55BC /* DVTPromise-Protocol.h */,
-				A01CEBBF18EC1CB8006A55BC /* DVTPropertyListEncoding-Protocol.h */,
-				A01CEBC018EC1CB8006A55BC /* DVTProtocolItemMatcher.h */,
-				A01CEBC118EC1CB8006A55BC /* DVTProvisioningProfile-Protocol.h */,
-				A01CEBC218EC1CB8006A55BC /* DVTProvisioningProfileManager.h */,
-				A01CEBC318EC1CB8006A55BC /* DVTProvisioningProfileProvider.h */,
-				A01CEBC418EC1CB8006A55BC /* DVTProvisioningProfileRecord.h */,
-				A01CEBC518EC1CB8006A55BC /* DVTPythonScanner.h */,
-				A01CEBC618EC1CB8006A55BC /* DVTRangeArray.h */,
-				A01CEBC718EC1CB8006A55BC /* DVTReaderWriterLock.h */,
-				A01CEBC818EC1CB8006A55BC /* DVTReferenceResolutionStrategy.h */,
-				A01CEBC918EC1CB8006A55BC /* DVTReferenceResolver.h */,
-				A01CEBCA18EC1CB8006A55BC /* DVTRegexCommandLineOptionDefinition.h */,
-				A01CEBCB18EC1CB8006A55BC /* DVTRegExScanner.h */,
-				A01CEBCC18EC1CB8006A55BC /* DVTRegistrable-Protocol.h */,
-				A01CEBCD18EC1CB8006A55BC /* DVTRegistry.h */,
-				A01CEBCE18EC1CB8006A55BC /* DVTRegularExpression.h */,
-				A01CEBCF18EC1CB8006A55BC /* DVTRegularExpressionMatch.h */,
-				A01CEBD018EC1CB8006A55BC /* DVTRelativeDateFormatting.h */,
-				A01CEBD118EC1CB8006A55BC /* DVTRescindCallbackObservingToken.h */,
-				A01CEBD218EC1CB8006A55BC /* DVTRevokeCertificateOperation.h */,
-				A01CEBD318EC1CB8006A55BC /* DVTRoleRecord.h */,
-				A01CEBD418EC1CB8006A55BC /* DVTRuleScanner.h */,
-				A01CEBD518EC1CB8006A55BC /* DVTScannerRule.h */,
-				A01CEBD618EC1CB8006A55BC /* DVTSDK.h */,
-				A01CEBD718EC1CB8006A55BC /* DVTSearchPath.h */,
-				A01CEBD818EC1CB8006A55BC /* DVTSelectorBasedObservingToken.h */,
-				A01CEBD918EC1CB8006A55BC /* DVTSelfInstrumentationSession-Protocol.h */,
-				A01CEBDA18EC1CB8006A55BC /* DVTSemaphore.h */,
-				A01CEBDB18EC1CB8006A55BC /* DVTSharedObserver.h */,
-				A01CEBDC18EC1CB8006A55BC /* DVTShoeboxIDRecord.h */,
-				A01CEBDD18EC1CB8006A55BC /* DVTSigningIdentitySnapshot.h */,
-				A01CEBDE18EC1CB8006A55BC /* DVTSimpleDeserializer.h */,
-				A01CEBDF18EC1CB8006A55BC /* DVTSimplePlainTextDeserializer.h */,
-				A01CEBE018EC1CB8006A55BC /* DVTSimplePlainTextSerializer.h */,
-				A01CEBE118EC1CB8006A55BC /* DVTSimpleSerialization-Protocol.h */,
-				A01CEBE218EC1CB8006A55BC /* DVTSimpleSerializer.h */,
-				A01CEBE318EC1CB8006A55BC /* DVTSimpleXMLWriter.h */,
-				A01CEBE418EC1CB8006A55BC /* DVTSourceCodeLanguage.h */,
-				A01CEBE518EC1CB8006A55BC /* DVTSourceCodeSymbolKind.h */,
-				A01CEBE618EC1CB8006A55BC /* DVTSourceModel.h */,
-				A01CEBE718EC1CB8006A55BC /* DVTSourceModelItem.h */,
-				A01CEBE818EC1CB8006A55BC /* DVTSourceModelItemMatcher.h */,
-				A01CEBE918EC1CB8006A55BC /* DVTSourceModelParser.h */,
-				A01CEBEA18EC1CB8006A55BC /* DVTSourceModelParserInteriorProductionRule.h */,
-				A01CEBEB18EC1CB8006A55BC /* DVTSourceModelParserProductionRule.h */,
-				A01CEBEC18EC1CB8006A55BC /* DVTSourceModelParserProductionState.h */,
-				A01CEBED18EC1CB8006A55BC /* DVTSourceNodeTypes.h */,
-				A01CEBEE18EC1CB8006A55BC /* DVTSourceScanner.h */,
-				A01CEBEF18EC1CB8006A55BC /* DVTSourceSpecification.h */,
-				A01CEBF018EC1CB8006A55BC /* DVTSourceTokens.h */,
-				A01CEBF118EC1CB8006A55BC /* DVTStackBacktrace.h */,
-				A01CEBF218EC1CB8006A55BC /* DVTStateRepository.h */,
-				A01CEBF318EC1CB8006A55BC /* DVTStateToken.h */,
-				A01CEBF418EC1CB8006A55BC /* DVTStringBuffer.h */,
-				A01CEBF518EC1CB8006A55BC /* DVTSyntaxTypeSpecification.h */,
-				A01CEBF618EC1CB8006A55BC /* DVTSynthesizedFileDataType.h */,
-				A01CEBF718EC1CB8006A55BC /* DVTSysmonBridge.h */,
-				A01CEBF818EC1CB8006A55BC /* DVTSystemActivityToken.h */,
-				A01CEBF918EC1CB8006A55BC /* DVTSystemEvents.h */,
-				A01CEBFA18EC1CB8006A55BC /* DVTSystemStatisticsMeasurement.h */,
-				A01CEBFB18EC1CB8006A55BC /* DVTTarjanSCCVertex.h */,
-				A01CEBFC18EC1CB8006A55BC /* DVTTask.h */,
-				A01CEBFD18EC1CB8006A55BC /* DVTTeamOperationBase.h */,
-				A01CEBFE18EC1CB8006A55BC /* DVTTeamRecord.h */,
-				A01CEBFF18EC1CB8006A55BC /* DVTTextDocumentLocation.h */,
-				A01CEC0018EC1CB8006A55BC /* DVTTextFinder.h */,
-				A01CEC0118EC1CB8006A55BC /* DVTTextlikeFindDescriptor-Protocol.h */,
-				A01CEC0218EC1CB8006A55BC /* DVTTextPreferences.h */,
-				A01CEC0318EC1CB8006A55BC /* DVTTextReplacable-Protocol.h */,
-				A01CEC0418EC1CB8006A55BC /* DVTToolchain.h */,
-				A01CEC0518EC1CB8006A55BC /* DVTToolchainRegistry.h */,
-				A01CEC0618EC1CB8006A55BC /* DVTToolsInfo.h */,
-				A01CEC0718EC1CB8006A55BC /* DVTToolsVersion.h */,
-				A01CEC0818EC1CB8006A55BC /* DVTUnknownPrimitiveFileDataType.h */,
-				A01CEC0918EC1CB8006A55BC /* DVTUpdateAppIDOperation.h */,
-				A01CEC0A18EC1CB8006A55BC /* DVTUpdatePortalDatabaseOperation.h */,
-				A01CEC0B18EC1CB8006A55BC /* DVTUpdateProfileOperation.h */,
-				A01CEC0C18EC1CB8006A55BC /* DVTUserNotificationCenter.h */,
-				A01CEC0D18EC1CB8006A55BC /* DVTVariableItemMatcher.h */,
-				A01CEC0E18EC1CB8006A55BC /* DVTVersion.h */,
-				A01CEC0F18EC1CB8006A55BC /* DVTWeakCallBack.h */,
-				A01CEC1018EC1CB8006A55BC /* DVTWeakInterposer.h */,
-				A01CEC1118EC1CB8006A55BC /* DVTWeakInterposer_ProxyHelperReference.h */,
-				A01CEC1218EC1CB8006A55BC /* DVTWeakInterposer_RuntimeWeakReference.h */,
-				A01CEC1318EC1CB8006A55BC /* DVTWeakReference.h */,
-				A01CEC1418EC1CB8006A55BC /* DVTXMLArchiver.h */,
-				A01CEC1518EC1CB8006A55BC /* DVTXMLUnarchiver.h */,
-				A01CEC1618EC1CB8006A55BC /* DVTXMLUnarchiving-Protocol.h */,
-				A01CEC1718EC1CB8006A55BC /* DVTXPCServiceInformation.h */,
-				A01CEC1818EC1CB8006A55BC /* DVTXPCServiceObserver.h */,
-				A01CEC1918EC1CB8006A55BC /* NSArray-DVTDiffHashing.h */,
-				A01CEC1A18EC1CB8006A55BC /* NSArray-DVTFoundationClassAdditions.h */,
-				A01CEC1B18EC1CB8006A55BC /* NSArray-DVTMacroExpansion.h */,
-				A01CEC1C18EC1CB8006A55BC /* NSArray-DVTMacroExpansionAdditions.h */,
-				A01CEC1D18EC1CB8006A55BC /* NSArray-DVTObservingConvenience.h */,
-				A01CEC1E18EC1CB8006A55BC /* NSArray-DVTRangeArrayAdditions.h */,
-				A01CEC1F18EC1CB8006A55BC /* NSArray-DVTShellUtilitiesAdditions.h */,
-				A01CEC2018EC1CB8006A55BC /* NSCharacterSet-DVTFoundationClassAdditions.h */,
-				A01CEC2118EC1CB8006A55BC /* NSCoding-Protocol.h */,
-				A01CEC2218EC1CB8006A55BC /* NSCopying-Protocol.h */,
-				A01CEC2318EC1CB8006A55BC /* NSData-DVTDiffHashing.h */,
-				A01CEC2418EC1CB8006A55BC /* NSData-DVTFoundationClassAdditions.h */,
-				A01CEC2518EC1CB8006A55BC /* NSData-DVTNSDataStdIO.h */,
-				A01CEC2618EC1CB8006A55BC /* NSData-DVTSecurityAdditions.h */,
-				A01CEC2718EC1CB8006A55BC /* NSDate-DVTFoundationClassAdditions.h */,
-				A01CEC2818EC1CB8006A55BC /* NSDictionary-ADCDownloadAuthenticationResponse.h */,
-				A01CEC2918EC1CB8006A55BC /* NSDictionary-DVTDiffHashing.h */,
-				A01CEC2A18EC1CB8006A55BC /* NSDictionary-DVTFoundationClassAdditions.h */,
-				A01CEC2B18EC1CB8006A55BC /* NSDictionary-DVTMacroExpansionAdditions.h */,
-				A01CEC2C18EC1CB8006A55BC /* NSError-DVTDeveloperAccountErrors.h */,
-				A01CEC2D18EC1CB8006A55BC /* NSError-DVTFoundationClassAdditions.h */,
-				A01CEC2E18EC1CB8006A55BC /* NSError-DVTSecurityAdditions.h */,
-				A01CEC2F18EC1CB8006A55BC /* NSFastEnumeration-Protocol.h */,
-				A01CEC3018EC1CB8006A55BC /* NSFileHandle-DVTNSFileHandleAdditions.h */,
-				A01CEC3118EC1CB8006A55BC /* NSFileHandle-DVTTaskAdditions.h */,
-				A01CEC3218EC1CB8006A55BC /* NSFileManager-DVTNSFileManagerAdditions.h */,
-				A01CEC3318EC1CB8006A55BC /* NSHTTPURLResponse-DVTHTTPCookies.h */,
-				A01CEC3418EC1CB8006A55BC /* NSInputStream-DVTFoundationClassAdditions.h */,
-				A01CEC3518EC1CB8006A55BC /* NSKeyedUnarchiverDelegate-Protocol.h */,
-				A01CEC3618EC1CB8006A55BC /* NSLocking-Protocol.h */,
-				A01CEC3718EC1CB8006A55BC /* NSMapTable-DVTNSMapTableAdditions.h */,
-				A01CEC3818EC1CB8006A55BC /* NSMutableArray-DVTFoundationClassAdditions.h */,
-				A01CEC3918EC1CB8006A55BC /* NSMutableCopying-Protocol.h */,
-				A01CEC3A18EC1CB8006A55BC /* NSMutableData-DVTFoundationClassAdditions.h */,
-				A01CEC3B18EC1CB8006A55BC /* NSMutableData-DVTNSDataStdIO.h */,
-				A01CEC3C18EC1CB8006A55BC /* NSMutableDictionary-DVTFoundationClassAdditions.h */,
-				A01CEC3D18EC1CB8006A55BC /* NSMutableSet-DVTNSMutableSetAdditions.h */,
-				A01CEC3E18EC1CB8006A55BC /* NSMutableString-DVTFoundationClassAdditions.h */,
-				A01CEC3F18EC1CB8006A55BC /* NSMutableURLRequest-DVTHTTPCookies.h */,
-				A01CEC4018EC1CB9006A55BC /* NSNotificationCenter-DVTNSNotificationCenterAdditions.h */,
-				A01CEC4118EC1CB9006A55BC /* NSNumber-DVTDiffHashing.h */,
-				A01CEC4218EC1CB9006A55BC /* NSObject-Deprecated.h */,
-				A01CEC4318EC1CB9006A55BC /* NSObject-DVTArcSupport.h */,
-				A01CEC4418EC1CB9006A55BC /* NSObject-DVTAssertionSupport.h */,
-				A01CEC4518EC1CB9006A55BC /* NSObject-DVTExtraXMArchiveDataAdditions.h */,
-				A01CEC4618EC1CB9006A55BC /* NSObject-DVTInvalidation.h */,
-				A01CEC4718EC1CB9006A55BC /* NSObject-DVTInvalidation2.h */,
-				A01CEC4818EC1CB9006A55BC /* NSObject-DVTInvalidation2Private.h */,
-				A01CEC4918EC1CB9006A55BC /* NSObject-DVTKVCMutableCollectionPropertySupport.h */,
-				A01CEC4A18EC1CB9006A55BC /* NSObject-DVTKVOAssertionValidationMethods.h */,
-				A01CEC4B18EC1CB9006A55BC /* NSObject-DVTNSMutableCopyingAdditions.h */,
-				A01CEC4C18EC1CB9006A55BC /* NSObject-DVTNSMutableCopyingAdditions_Internal.h */,
-				A01CEC4D18EC1CB9006A55BC /* NSObject-DVTNSRunLoopAdditions.h */,
-				A01CEC4E18EC1CB9006A55BC /* NSObject-DVTObjectDeallocationMonitorAdditions.h */,
-				A01CEC4F18EC1CB9006A55BC /* NSObject-DVTObservingConvenience.h */,
-				A01CEC5018EC1CB9006A55BC /* NSObject-DVTPropertyLinking.h */,
-				A01CEC5118EC1CB9006A55BC /* NSObject-DVTSelectorAdditions.h */,
-				A01CEC5218EC1CB9006A55BC /* NSObject-DVTSharedObserverAccess.h */,
-				A01CEC5318EC1CB9006A55BC /* NSObject-DVTSimpleSerialization.h */,
-				A01CEC5418EC1CB9006A55BC /* NSObject-DVTXMLArchiving.h */,
-				A01CEC5518EC1CB9006A55BC /* NSObject-DVTXMLUnarchivingPartial.h */,
-				A01CEC5618EC1CB9006A55BC /* NSObject-Protocol.h */,
-				A01CEC5718EC1CB9006A55BC /* NSOutputStream-DVTFoundationClassAdditions.h */,
-				A01CEC5818EC1CB9006A55BC /* NSProcessInfo-DVTNSProcessInfoAdditions.h */,
-				A01CEC5918EC1CB9006A55BC /* NSPropertyListSerialization-DVTNSPropertyListSerializationAdditions.h */,
-				A01CEC5A18EC1CB9006A55BC /* NSRunLoop-DVTNSRunLoopAdditions.h */,
-				A01CEC5B18EC1CB9006A55BC /* NSSet-DVTNSSetAdditions.h */,
-				A01CEC5C18EC1CB9006A55BC /* NSString-DVTDiffHashing.h */,
-				A01CEC5D18EC1CB9006A55BC /* NSString-DVTFileSystemRepresentationProviding.h */,
-				A01CEC5E18EC1CB9006A55BC /* NSString-DVTFoundationANSIText.h */,
-				A01CEC5F18EC1CB9006A55BC /* NSString-DVTFoundationClassAdditions.h */,
-				A01CEC6018EC1CB9006A55BC /* NSString-DVTMacroDefinitionAdditions.h */,
-				A01CEC6118EC1CB9006A55BC /* NSString-DVTMacroExpansion.h */,
-				A01CEC6218EC1CB9006A55BC /* NSString-DVTMacroExpansionAdditions.h */,
-				A01CEC6318EC1CB9006A55BC /* NSString-DVTMacroNameStringCompatibility.h */,
-				A01CEC6418EC1CB9006A55BC /* NSThread-DVTObjectAllocationTracking.h */,
-				A01CEC6518EC1CB9006A55BC /* NSURL-DVTNSURLAdditions.h */,
-				A01CEC6618EC1CB9006A55BC /* NSURL-DVTSecurityAdditions.h */,
-				A01CEC6718EC1CB9006A55BC /* NSURLConnectionDataDelegate-Protocol.h */,
-				A01CEC6818EC1CB9006A55BC /* NSURLConnectionDelegate-Protocol.h */,
-				A01CEC6918EC1CB9006A55BC /* NSURLProtectionSpace-DVTSecurityAdditions.h */,
-				A01CEC6A18EC1CB9006A55BC /* NSUserDefaults-DVTNSUserDefaultsAdditions.h */,
-				A01CEC6B18EC1CB9006A55BC /* NSUserNotificationCenterDelegate-Protocol.h */,
-				A01CEC6C18EC1CB9006A55BC /* NSXMLElement-DVTFoundationClassAdditions.h */,
-			);
-			name = DVTFoundation;
-			path = "../../../Xcode5-RuntimeHeaders/DVTFoundation";
 			sourceTree = "<group>";
 		};
 		A06A7E5118E40D9C0039BB1B = {
@@ -1030,6 +52,7 @@
 				A06A7E5F18E40D9C0039BB1B /* RevealPlugin */,
 				A06A7E5C18E40D9C0039BB1B /* Frameworks */,
 				A06A7E5B18E40D9C0039BB1B /* Products */,
+				386551249FEE4E30BF6FE12B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1044,8 +67,8 @@
 		A06A7E5C18E40D9C0039BB1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A01CEA8E18EC1915006A55BC /* IDEFoundation.framework */,
 				A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */,
+				0C4AC3B54C1C4664BF51AC76 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1056,7 +79,6 @@
 				A0FDABD518ED53A60073873B /* BuildScriptHeader.h */,
 				A06A7E6B18E412520039BB1B /* RevealPlugin.h */,
 				A06A7E6C18E412520039BB1B /* RevealPlugin.m */,
-				A01CEA8A18EC16F4006A55BC /* Plugins */,
 				A01CEA8018EC0F90006A55BC /* Vendors */,
 				A06A7E6018E40D9C0039BB1B /* Supporting Files */,
 			);
@@ -1066,7 +88,6 @@
 		A06A7E6018E40D9C0039BB1B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A01CEA9318EC1CB7006A55BC /* DVTFoundation */,
 				A06A7E6118E40D9C0039BB1B /* RevealPlugin-Info.plist */,
 				A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */,
 				A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */,
@@ -1081,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06A7E6818E40D9C0039BB1B /* Build configuration list for PBXNativeTarget "RevealPlugin" */;
 			buildPhases = (
+				1610738086824EED83E81AF5 /* Check Pods Manifest.lock */,
 				A06A7E5618E40D9C0039BB1B /* Sources */,
 				A06A7E5718E40D9C0039BB1B /* Frameworks */,
 				A06A7E5818E40D9C0039BB1B /* Resources */,
+				52405ADC2C3D40DFBE486A80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1131,14 +154,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1610738086824EED83E81AF5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52405ADC2C3D40DFBE486A80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A06A7E5618E40D9C0039BB1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01CEA8518EC0F90006A55BC /* JRSwizzle.m in Sources */,
 				A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */,
-				A01CEA9218EC19CB006A55BC /* IDEBuildTask+RPPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1228,6 +282,7 @@
 		};
 		A06A7E6918E40D9C0039BB1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386551249FEE4E30BF6FE12B /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
@@ -1256,6 +311,7 @@
 		};
 		A06A7E6A18E40D9C0039BB1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386551249FEE4E30BF6FE12B /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;

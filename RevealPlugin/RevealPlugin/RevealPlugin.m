@@ -11,6 +11,10 @@
 #import <objc/message.h>
 #import "BuildScriptHeader.h"
 
+@interface RevealPlugin ()
+
+@end
+
 @implementation RevealPlugin
 
 - (void)dealloc
@@ -45,10 +49,10 @@
                                                  name:NSApplicationDidFinishLaunchingNotification
                                                object:nil];
 
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(observeAllNotification:)
-//                                                 name:nil
-//                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(observeAllNotification:)
+                                                 name:nil
+                                               object:nil];
   }
   return self;
 }
@@ -91,7 +95,31 @@
 
 - (void)observeAllNotification:(NSNotification *)notif
 {
-  NSLog(@"Notification:%@", notif.name);
+  // Log notifications if you like
+  if ([[notif name] length] >= 2 && ([[[notif name] substringWithRange:NSMakeRange(0, 2)] isEqualTo:@"NS"] || [[[notif name] substringWithRange:NSMakeRange(0, 2)] isEqualTo:@"_N"])) {
+    // It's a system-level notification
+  } else {
+    // It's a Xcode-level notification
+    NSLog(@"%@", notif.name);
+  }
+  
+  // This seems like quite a mess, but the notification-driven approach avoids waiting for
+  // indeterminate amounts of time for building / running to get far enough along to avoid crashes.
+  
+  // Finished building
+  if ([[notif name] isEqualToString:@"IDEBuildOperationDidGenerateOutputFilesNotification"]) {
+    
+  }
+  
+  // Finished launching
+  if ([[notif name] isEqualToString:@"DVTDeviceShouldIgnoreChangesDidEndNotification"]) {
+    
+  }
+  
+  // Finished stopping
+  if ([[notif name] isEqualToString:@"CurrentExecutionTrackerCompletedNotification"]) {
+    
+  }
 }
 
 //- (void)selectionDidChange:(NSNotification *)notif
@@ -113,36 +141,38 @@
 {
   NSLog(@"Reveal didPressRevealInspectProductMenu:%@", sender);
 
-//  NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
-//  if (productMenuItem) {
-//    NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
-//
-//    NSLog(@"%@ target:%@ selector:%@", runItem, runItem.target, NSStringFromSelector(runItem.action));
-//
-//    objc_msgSend(runItem.target, runItem.action);
-  ////    [runItem.target performSelectorOnMainThread:runItem.action withObject:runItem waitUntilDone:NO];
-  //  }
+  NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
+  if (productMenuItem) {
+    NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
+    [self performActionForMenuItem:runItem];
+  }
   
   // start applescript
-  NSString *scriptPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"rp.script"];
-//  if (![[NSFileManager defaultManager] fileExistsAtPath:scriptPath]) {
-    [kScriptBuild writeToFile:scriptPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-//  }
-  
-  if ([scriptPath length] == 0)
-    return;
-
-  NSURL *scriptURL = [NSURL fileURLWithPath:scriptPath];
-
-  NSAppleScript *as = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL
-                                                             error:nil];
-  [as executeAndReturnError: NULL];
+//  NSString *scriptPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"rp.script"];
+//  [kScriptBuild writeToFile:scriptPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+//  if ([scriptPath length] == 0)
+//    return;
+//
+//  NSURL *scriptURL = [NSURL fileURLWithPath:scriptPath];
+//  NSAppleScript *as = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL
+//                                                             error:nil];
+//  [as executeAndReturnError: NULL];
 }
 
 - (void)didPressRevealInspectDebugMenu:(NSMenuItem *)sender
 {
   NSLog(@"Reveal didPressRevealInspectDebugMenu(Attach to RevealApp):%@", sender);
 
+}
+
+#pragma mark -
+
+- (void)performActionForMenuItem:(NSMenuItem *)menuItem
+{
+  // Run UI stuff on the main thread
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[menuItem menu] performActionForItemAtIndex:[[menuItem menu] indexOfItem:menuItem]];
+  });
 }
 
 @end
