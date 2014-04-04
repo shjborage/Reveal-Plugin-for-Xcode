@@ -15,6 +15,7 @@
 
 @property (nonatomic, assign) BOOL isRevealed;
 @property (nonatomic, assign) BOOL isPreparedForLaunch;
+@property (nonatomic, assign) BOOL isInspected;
 
 @property (nonatomic, strong) NSMenuItem *revealItem;
 @property (nonatomic, strong) NSMenuItem *attachItem;
@@ -206,7 +207,18 @@
 
 - (void)attachToLLDB
 {
-  NSLog(@"AttachToLLDB starting");
+  if (!self.isInspected) {
+    NSLog(@"AttachToLLDB starting");
+    self.isInspected = YES;
+    [self.attachItem setEnabled:NO];
+  } else {
+    [self.attachItem setEnabled:NO];
+    NSLog(@"AttachToLLDB already started");
+    return;
+  }
+  
+  // do something
+  // self.isInspected = NO;
 }
 
 @end
