@@ -79,11 +79,11 @@
 		A06A7E5F18E40D9C0039BB1B /* RevealPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				A06A7E6B18E412520039BB1B /* RevealPlugin.h */,
+				A06A7E6C18E412520039BB1B /* RevealPlugin.m */,
 				A0FDABD518ED53A60073873B /* BuildScriptHeader.h */,
 				A05281C818EEBB5700F54910 /* RevealIDEModel.h */,
 				A05281C918EEBB5700F54910 /* RevealIDEModel.m */,
-				A06A7E6B18E412520039BB1B /* RevealPlugin.h */,
-				A06A7E6C18E412520039BB1B /* RevealPlugin.m */,
 				A01CEA8018EC0F90006A55BC /* Vendors */,
 				A06A7E6018E40D9C0039BB1B /* Supporting Files */,
 			);
@@ -295,10 +295,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "${HOME}";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RevealPlugin/Plugins",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -323,10 +320,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "${HOME}";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RevealPlugin/Plugins",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

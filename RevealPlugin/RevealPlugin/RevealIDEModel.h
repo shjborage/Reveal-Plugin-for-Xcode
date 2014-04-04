@@ -8,12 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+@interface DBGDebugSession : NSObject
+
+@end
+
+@interface DBGDebugSessionController : NSObject
+
+@property (readonly) DBGDebugSession *debugSession;
+
+@end
+
+
 @interface IDENavigatorArea : NSObject
 
 @property NSArrayController *extensionsController;
 - (id)currentNavigator;
 
 @end
+
 
 @interface IDEWorkspaceTabController : NSObject
 
@@ -22,17 +34,20 @@
 
 @end
 
+
 @interface IDEWorkspaceWindowController : NSObject
 
 @property (readonly) IDEWorkspaceTabController *activeWorkspaceTabController;
+@property (readonly) DBGDebugSessionController *debugSessionController;
 
 @end
-
 
 #pragma mark - Reveal IDE Tools
 
 @interface RevealIDEModel : NSObject
 
 + (IDEWorkspaceTabController *)workspaceControllerIn;
+
++ (DBGDebugSession *)debugSessionIn;
 
 @end

@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "BuildScriptHeader.h"
+#import "RevealIDEModel.h"
 
 @interface RevealPlugin ()
 
@@ -229,9 +230,10 @@
     self.isInspected = NO;
     return;
   }
-//  self pause
   
-  // self.isInspected = NO;
+  [self pauseExecutionIn];
+  
+  self.isInspected = NO;
 }
 
 #pragma mark - private
@@ -243,6 +245,12 @@
     return YES;
   else
     return NO;
+}
+
+- (void)pauseExecutionIn
+{
+  DBGDebugSession *debugsession = [RevealIDEModel debugSessionIn];
+  NSLog(@"debugsession:%@", debugsession);
 }
 
 @end
