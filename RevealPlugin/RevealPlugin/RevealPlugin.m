@@ -75,7 +75,7 @@
     NSInteger revealIndex = [menu indexOfItem:analyzeItem] + 1;
 
 //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
-    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with Reveal"
+    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Inspect with RevealApp"
                                                         action:@selector(didPressRevealInspectProductMenu:)
                                                  keyEquivalent:@"p"];
     [revealItem setTarget:self];
@@ -87,7 +87,7 @@
 
   NSMenuItem *debugMenuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
   if (debugMenuItem) {
-    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Attach to Reveal"
+    NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Attach to RevealApp"
                                                         action:@selector(didPressRevealInspectDebugMenu:)
                                                  keyEquivalent:@";"];
     [revealItem setTarget:self];
@@ -188,7 +188,7 @@
 
 - (void)didPressRevealInspectDebugMenu:(NSMenuItem *)sender
 {
-  NSLog(@"Reveal didPressRevealInspectDebugMenu(Attach to Reveal):%@", sender);
+  NSLog(@"Reveal didPressRevealInspectDebugMenu(Attach to RevealApp):%@", sender);
 
   [self attachToLLDB];
 }
@@ -217,26 +217,8 @@
     return;
   }
   
-  // do pause execution in and then attach
-  // check the dylib exist, if not, alert
-  if (![self checkRevealDylib]) {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"The Reveal dynamic library does not exist. Please download the latest copy of the Reveal and replace the old version at http://revealapp.com."];
-    [alert runModal];
-    
-    self.isInspected = NO;
-    return;
-  }
-//  self pause
-  
+  // do something
   // self.isInspected = NO;
-}
-
-#pragma mark - private
-
-- (BOOL)checkRevealDylib
-{
-  return NO;
 }
 
 @end
