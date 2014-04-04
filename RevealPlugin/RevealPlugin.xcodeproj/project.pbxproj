@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05281CA18EEBB5700F54910 /* RevealIDEModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A05281C918EEBB5700F54910 /* RevealIDEModel.m */; };
 		A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */; };
 		A06A7E6418E40D9C0039BB1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */; };
 		A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A7E6C18E412520039BB1B /* RevealPlugin.m */; };
-		A07541D218EEA36700D5AC5B /* IDEWorkspaces.m in Sources */ = {isa = PBXBuildFile; fileRef = A07541D118EEA36700D5AC5B /* IDEWorkspaces.m */; };
 		B488BB64504A4B39931AFE54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC3B54C1C4664BF51AC76 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C4AC3B54C1C4664BF51AC76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		386551249FEE4E30BF6FE12B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A05281C818EEBB5700F54910 /* RevealIDEModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealIDEModel.h; sourceTree = "<group>"; };
+		A05281C918EEBB5700F54910 /* RevealIDEModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealIDEModel.m; sourceTree = "<group>"; };
 		A06A7E5A18E40D9C0039BB1B /* RevealPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevealPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A06A7E6118E40D9C0039BB1B /* RevealPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevealPlugin-Info.plist"; sourceTree = "<group>"; };
@@ -24,8 +26,6 @@
 		A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevealPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		A06A7E6B18E412520039BB1B /* RevealPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealPlugin.h; sourceTree = "<group>"; };
 		A06A7E6C18E412520039BB1B /* RevealPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealPlugin.m; sourceTree = "<group>"; };
-		A07541D018EEA36700D5AC5B /* IDEWorkspaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEWorkspaces.h; sourceTree = "<group>"; };
-		A07541D118EEA36700D5AC5B /* IDEWorkspaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEWorkspaces.m; sourceTree = "<group>"; };
 		A0FDABD518ED53A60073873B /* BuildScriptHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BuildScriptHeader.h; path = Resources/BuildScriptHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				A0FDABD518ED53A60073873B /* BuildScriptHeader.h */,
-				A07541CF18EEA1D400D5AC5B /* IDEKit */,
+				A05281C818EEBB5700F54910 /* RevealIDEModel.h */,
+				A05281C918EEBB5700F54910 /* RevealIDEModel.m */,
 				A06A7E6B18E412520039BB1B /* RevealPlugin.h */,
 				A06A7E6C18E412520039BB1B /* RevealPlugin.m */,
 				A01CEA8018EC0F90006A55BC /* Vendors */,
@@ -97,15 +98,6 @@
 				A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A07541CF18EEA1D400D5AC5B /* IDEKit */ = {
-			isa = PBXGroup;
-			children = (
-				A07541D018EEA36700D5AC5B /* IDEWorkspaces.h */,
-				A07541D118EEA36700D5AC5B /* IDEWorkspaces.m */,
-			);
-			path = IDEKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07541D218EEA36700D5AC5B /* IDEWorkspaces.m in Sources */,
 				A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */,
+				A05281CA18EEBB5700F54910 /* RevealIDEModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -137,8 +137,10 @@
       NSLog(@"isPreparedForLaunch...");
       [self.attachItem setEnabled:YES];
       
-      if (self.isRevealed)
+      if (self.isRevealed) {
+        self.isRevealed = NO;
         [self attachToLLDB];
+      }
     }
     self.isPreparedForLaunch = NO;
   }
@@ -236,7 +238,11 @@
 
 - (BOOL)checkRevealDylib
 {
-  return NO;
+  NSString *dylibPath = @"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib";
+  if ([[NSFileManager defaultManager] fileExistsAtPath:dylibPath])
+    return YES;
+  else
+    return NO;
 }
 
 @end
