@@ -13,6 +13,12 @@
 
 @interface RevealPlugin ()
 
+@property (nonatomic, assign) BOOL isRevealed;
+@property (nonatomic, assign) BOOL isPreparedForLaunch;
+
+@property (nonatomic, strong) NSMenuItem *revealItem;
+@property (nonatomic, strong) NSMenuItem *attachItem;
+
 @end
 
 @implementation RevealPlugin
@@ -48,7 +54,7 @@
                                              selector:@selector(applicationDidFinishLaunching:)
                                                  name:NSApplicationDidFinishLaunchingNotification
                                                object:nil];
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(observeAllNotification:)
                                                  name:nil
@@ -61,11 +67,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notif
 {
-//  [[NSNotificationCenter defaultCenter] addObserver:self
-//                                           selector:@selector(selectionDidChange:)
-//                                               name:NSTextViewDidChangeSelectionNotification
-//                                             object:nil];
-
   NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
   if (productMenuItem) {
     NSMenu *menu = [productMenuItem submenu];
@@ -79,53 +80,76 @@
     [revealItem setTarget:self];
     [revealItem setKeyEquivalentModifierMask:NSControlKeyMask|NSCommandKeyMask];
     [[productMenuItem submenu] insertItem:revealItem atIndex:revealIndex];
+    
+    self.revealItem = revealItem;
   }
 
   NSMenuItem *debugMenuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
   if (debugMenuItem) {
-    //    [[productMenuItem submenu] addItem:[NSMenuItem separatorItem]];
     NSMenuItem *revealItem = [[NSMenuItem alloc] initWithTitle:@"Attach to RevealApp"
                                                         action:@selector(didPressRevealInspectDebugMenu:)
                                                  keyEquivalent:@";"];
     [revealItem setTarget:self];
     [revealItem setKeyEquivalentModifierMask:NSControlKeyMask|NSCommandKeyMask];
     [[debugMenuItem submenu] addItem:revealItem];
+    
+    [revealItem.menu setAutoenablesItems:NO];
+    [revealItem setEnabled:NO];
+    self.attachItem = revealItem;
   }
 }
 
 - (void)observeAllNotification:(NSNotification *)notif
 {
-  // Log notifications if you like
-  if ([[notif name] length] >= 2 && ([[[notif name] substringWithRange:NSMakeRange(0, 2)] isEqualTo:@"NS"] || [[[notif name] substringWithRange:NSMakeRange(0, 2)] isEqualTo:@"_N"])) {
-    // It's a system-level notification
-  } else {
-    // It's a Xcode-level notification
-    NSLog(@"%@", notif.name);
-  }
+//  // Log notifications if you like
+//  if ([[notif name] length] >= 2 && ([[[notif name] substringWithRange:NSMakeRange(0, 2)] isEqualTo:@"NS"] || [[[notif name] substringWithRange:NSMakeRange(0, 2)] isEqualTo:@"_N"])) {
+//    // It's a system-level notification
+//  } else {
+//    // It's a Xcode-level notification
+//    NSLog(@"%@", notif.name);
+//  }
   
   // This seems like quite a mess, but the notification-driven approach avoids waiting for
   // indeterminate amounts of time for building / running to get far enough along to avoid crashes.
   
+  /*
+   IDEBuildOperationDidStopNotification
+   IDEBuildOperationWillStartNotification
+   
+   DVTDeviceShouldIgnoreChangesDidEndNotification
+   IDECurrentLaunchSessionTargetOutputChanged
+   IDECurrentLaunchSessionStateChanged
+   */
+  
   // Finished building
   if ([[notif name] isEqualToString:@"IDEBuildOperationDidGenerateOutputFilesNotification"]) {
+    // Recived notification every time per build
+    NSLog(@"Build finish...");
     
+    self.isPreparedForLaunch = YES;
   }
   
-  // Finished launching
-  if ([[notif name] isEqualToString:@"DVTDeviceShouldIgnoreChangesDidEndNotification"]) {
-    
+  if ([[notif name] isEqualToString:@"IDECurrentLaunchSessionTargetOutputChanged"]) {
+    // Finish building and second notif is the already run the project.
+    NSLog(@"Debug state change...");
+    if (self.isPreparedForLaunch) {
+      NSLog(@"isPreparedForLaunch...");
+      [self.attachItem setEnabled:YES];
+      
+      if (self.isRevealed)
+        [self attachToLLDB];
+    }
+    self.isPreparedForLaunch = NO;
   }
   
   // Finished stopping
   if ([[notif name] isEqualToString:@"CurrentExecutionTrackerCompletedNotification"]) {
-    
+    // Reviced no matter how it is stoped.
+    NSLog(@"Finished.");
+    [self.attachItem setEnabled:NO];
+    self.isPreparedForLaunch = NO;
   }
 }
-
-//- (void)selectionDidChange:(NSNotification *)notif
-//{
-//  NSLog(@"Reveal selectionDidChange:%@", notif);
-//}
 
 #pragma mark - actions
 
@@ -141,6 +165,8 @@
 {
   NSLog(@"Reveal didPressRevealInspectProductMenu:%@", sender);
 
+  self.isRevealed = YES;
+  
   NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
   if (productMenuItem) {
     NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
@@ -163,6 +189,7 @@
 {
   NSLog(@"Reveal didPressRevealInspectDebugMenu(Attach to RevealApp):%@", sender);
 
+  [self attachToLLDB];
 }
 
 #pragma mark -
@@ -173,6 +200,13 @@
   dispatch_async(dispatch_get_main_queue(), ^{
     [[menuItem menu] performActionForItemAtIndex:[[menuItem menu] indexOfItem:menuItem]];
   });
+}
+
+#pragma mark - attach to lldb
+
+- (void)attachToLLDB
+{
+  NSLog(@"AttachToLLDB starting");
 }
 
 @end
