@@ -1,5 +1,5 @@
 //
-//  IDEWorkspaceWindowController.h
+//  RevealIDEModel.h
 //  RevealPlugin
 //
 //  Created by shjborage on 4/4/14.
@@ -29,9 +29,9 @@
 @end
 
 
-#pragma mark - Reveal Tool
+#pragma mark - Reveal IDE Tools
 
-@interface RevealTool : NSObject
+@interface RevealIDEModel : NSObject
 
 + (IDEWorkspaceTabController *)workspaceControllerIn;
 
