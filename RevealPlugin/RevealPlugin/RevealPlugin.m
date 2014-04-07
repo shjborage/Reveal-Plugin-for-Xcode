@@ -265,8 +265,20 @@
 //    } else {
 //      // exception
 //    }
-    IDEConsoleTextView *consoleView = [RevealIDEModel whenXcodeConsoleIn];
-    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+      IDEConsoleTextView *consoleView = [RevealIDEModel whenXcodeConsoleIn];
+      NSString *consoleStr = objc_msgSend(consoleView, @selector(string));
+      if (NSNotFound != [consoleStr rangeOfString:@"(lldb)" options:NSBackwardsSearch].location) {
+        objc_msgSend(consoleView, @selector(insertText:), @"expr (void*)dlopen(\"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib\", 0x2);");
+        objc_msgSend(consoleView, @selector(insertNewline:), nil);
+        
+        objc_msgSend(consoleView, @selector(insertText:), @"expr [(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@\"IBARevealRequestStart\" object:nil];");
+        objc_msgSend(consoleView, @selector(insertNewline:), nil);
+        
+        objc_msgSend(consoleView, @selector(insertText:), @"continue");
+        objc_msgSend(consoleView, @selector(insertNewline:), nil);
+      }
+    });
   } else {
     // wait
   }
