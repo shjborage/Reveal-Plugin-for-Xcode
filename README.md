@@ -12,3 +12,4 @@ Plugin for Xcode to integrate the Reveal App to your project automatic.
 ## Thanks
 	
 +	[Integrating Reveal without modifying your Xcode project](http://blog.ittybittyapps.com/blog/2013/11/07/integrating-reveal-without-modifying-your-xcode-project/)
++	[Xcode 4 插件制作入门](http://onevcat.com/2013/02/xcode-plugin)

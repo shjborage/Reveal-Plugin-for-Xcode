@@ -8,7 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@class IDEConsoleTextView;
+
+@interface DBGLLDBLauncher : NSObject
+
+- (void)_executeLLDBCommands:(id)arg1;
+
+@end
+
 @interface DBGDebugSession : NSObject
+
+@property (readonly) DBGLLDBLauncher *launcher;
+
+- (void)requestPause;
+- (void)requestContinue;
 
 @end
 
@@ -49,5 +62,7 @@
 + (IDEWorkspaceTabController *)workspaceControllerIn;
 
 + (DBGDebugSession *)debugSessionIn;
+
++ (IDEConsoleTextView *)whenXcodeConsoleIn;
 
 @end

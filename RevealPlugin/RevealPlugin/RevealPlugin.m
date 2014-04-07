@@ -250,7 +250,26 @@
 - (void)pauseExecutionIn
 {
   DBGDebugSession *debugsession = [RevealIDEModel debugSessionIn];
-  NSLog(@"debugsession:%@", debugsession);
+  
+  if (!debugsession)
+    return;
+  
+  if ([debugsession respondsToSelector:@selector(requestPause)]) {
+    objc_msgSend(debugsession, @selector(requestPause));
+    
+//    if ([debugsession respondsToSelector:@selector(launcher)]) {
+//      DBGLLDBLauncher *launcher = debugsession.launcher;
+//      if ([launcher respondsToSelector:@selector(_executeLLDBCommands:)]) {
+//        [launcher _executeLLDBCommands:@"po"];
+//      }
+//    } else {
+//      // exception
+//    }
+    IDEConsoleTextView *consoleView = [RevealIDEModel whenXcodeConsoleIn];
+    
+  } else {
+    // wait
+  }
 }
 
 @end

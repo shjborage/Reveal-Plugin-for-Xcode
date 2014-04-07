@@ -8,6 +8,8 @@
 
 #import "RevealIDEModel.h"
 #import <objc/message.h>
+#import "NSView+SQDump.h"
+#import "NSView+SQFindSubView.h"
 
 @implementation RevealIDEModel
 
@@ -41,6 +43,17 @@
       return nil;
     }
   }
+}
+
++ (IDEConsoleTextView *)whenXcodeConsoleIn
+{
+//  [[[NSApp mainWindow] contentView] dumpWithIndent:@""];
+  NSView *consoleView = [[[NSApp mainWindow] contentView] findSubView:NSClassFromString(@"IDEConsoleTextView")];
+  
+  if (consoleView == nil) {
+    // TODO: View->Debug Area->Active Console to get the IDEConsoleTextView
+  }
+  return (IDEConsoleTextView *)consoleView;
 }
 
 @end

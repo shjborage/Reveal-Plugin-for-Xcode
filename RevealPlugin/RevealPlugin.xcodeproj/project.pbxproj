@@ -11,6 +11,8 @@
 		A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06A7E5D18E40D9C0039BB1B /* CoreFoundation.framework */; };
 		A06A7E6418E40D9C0039BB1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06A7E6218E40D9C0039BB1B /* InfoPlist.strings */; };
 		A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A7E6C18E412520039BB1B /* RevealPlugin.m */; };
+		A09434AD18F2E15900AE246C /* NSView+SQDump.m in Sources */ = {isa = PBXBuildFile; fileRef = A09434AC18F2E15900AE246C /* NSView+SQDump.m */; };
+		A09434B018F2E16E00AE246C /* NSView+SQFindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = A09434AF18F2E16E00AE246C /* NSView+SQFindSubView.m */; };
 		B488BB64504A4B39931AFE54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC3B54C1C4664BF51AC76 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,10 @@
 		A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevealPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		A06A7E6B18E412520039BB1B /* RevealPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealPlugin.h; sourceTree = "<group>"; };
 		A06A7E6C18E412520039BB1B /* RevealPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealPlugin.m; sourceTree = "<group>"; };
+		A09434AB18F2E15900AE246C /* NSView+SQDump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+SQDump.h"; sourceTree = "<group>"; };
+		A09434AC18F2E15900AE246C /* NSView+SQDump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+SQDump.m"; sourceTree = "<group>"; };
+		A09434AE18F2E16E00AE246C /* NSView+SQFindSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+SQFindSubView.h"; sourceTree = "<group>"; };
+		A09434AF18F2E16E00AE246C /* NSView+SQFindSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+SQFindSubView.m"; sourceTree = "<group>"; };
 		A0FDABD518ED53A60073873B /* BuildScriptHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BuildScriptHeader.h; path = Resources/BuildScriptHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +51,7 @@
 		A01CEA8018EC0F90006A55BC /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A09434AA18F2E15900AE246C /* Catagories */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -98,6 +105,17 @@
 				A06A7E6518E40D9C0039BB1B /* RevealPlugin-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A09434AA18F2E15900AE246C /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				A09434AB18F2E15900AE246C /* NSView+SQDump.h */,
+				A09434AC18F2E15900AE246C /* NSView+SQDump.m */,
+				A09434AE18F2E16E00AE246C /* NSView+SQFindSubView.h */,
+				A09434AF18F2E16E00AE246C /* NSView+SQFindSubView.m */,
+			);
+			path = Catagories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09434AD18F2E15900AE246C /* NSView+SQDump.m in Sources */,
 				A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */,
+				A09434B018F2E16E00AE246C /* NSView+SQFindSubView.m in Sources */,
 				A05281CA18EEBB5700F54910 /* RevealIDEModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
