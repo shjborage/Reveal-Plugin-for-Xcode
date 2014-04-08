@@ -38,6 +38,8 @@
 @property (readonly) IDENavigatorArea *navigatorArea;
 @property(readonly) IDEWorkspaceTabController *structureEditWorkspaceTabController;
 
+- (void)runActiveRunContext:(id)arg1;
+
 @end
 
 
@@ -53,6 +55,8 @@
 @interface RevealIDEModel : NSObject
 
 + (IDEWorkspaceTabController *)workspaceControllerIn;
+
+//+ (void)activeIDEWindow;
 
 + (DBGDebugSession *)debugSessionIn;
 

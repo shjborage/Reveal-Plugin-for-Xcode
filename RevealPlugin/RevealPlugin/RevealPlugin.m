@@ -250,21 +250,46 @@
   [as executeAndReturnError: NULL];
 }
 
+- (void)activeXcodeApp
+{
+  NSString *scriptPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"xcode.script"];
+  [kScriptActiveXcode writeToFile:scriptPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+  if ([scriptPath length] == 0)
+    return;
+  
+  NSURL *scriptURL = [NSURL fileURLWithPath:scriptPath];
+  NSAppleScript *as = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL
+                                                             error:nil];
+  [as executeAndReturnError: NULL];
+}
+
 - (void)pauseExecutionIn
 {
   DBGDebugSession *debugsession = [RevealIDEModel debugSessionIn];
   
   if (!debugsession) {
-    NSLog(@"Debugsession is nil");
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"An unexpected error occurred, please try again later!"];
-    [alert runModal];
+    [self activeXcodeApp];
     
-    [self.attachItem setEnabled:YES];
-    return;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+      [self activeXcodeApp];
+      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        DBGDebugSession *debugsession = [RevealIDEModel debugSessionIn];
+        if (!debugsession) {
+          NSLog(@"Debugsession is nil");
+          NSAlert *alert = [[NSAlert alloc] init];
+          [alert setMessageText:@"An unexpected error occurred, please try again later!"];
+          [alert runModal];
+          
+          [self.attachItem setEnabled:YES];
+          return;
+        } else {
+          [self inspectWithReveal:debugsession];
+        }
+      });
+    });
+  } else {
+    [self inspectWithReveal:debugsession];
   }
-  
-  [self inspectWithReveal:debugsession];
 }
 
 - (void)inspectWithReveal:(DBGDebugSession *)debugsession

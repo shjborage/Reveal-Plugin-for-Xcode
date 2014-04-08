@@ -24,6 +24,17 @@
   return nil;
 }
 
+//+ (void)activeIDEWindow
+//{
+//  NSWindowController *currentWindowController = [[NSApp keyWindow] windowController];
+//  if ([currentWindowController isKindOfClass:NSClassFromString(@"IDEWorkspaceWindowController")]) {
+//    IDEWorkspaceWindowController *workspaceController = (IDEWorkspaceWindowController *)currentWindowController;
+//    
+//    IDEWorkspaceTabController *activeTabController = workspaceController.activeWorkspaceTabController;
+//    [activeTabController performSelectorOnMainThread:@selector(runActiveRunContext:) withObject:nil waitUntilDone:NO];
+//  }
+//}
+
 + (DBGDebugSession *)debugSessionIn
 {
   IDEWorkspaceTabController *tabController = [self workspaceControllerIn];

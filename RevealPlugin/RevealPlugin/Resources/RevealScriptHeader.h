@@ -24,4 +24,8 @@
 activate\n\
 end tell"
 
+#define kScriptActiveXcode @"tell application \"Xcode\" \n\
+activate\n\
+end tell"
+
 #endif
