@@ -254,9 +254,21 @@
 {
   DBGDebugSession *debugsession = [RevealIDEModel debugSessionIn];
   
-  if (!debugsession)
+  if (!debugsession) {
+    NSLog(@"Debugsession is nil");
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"An unexpected error occurred, please try again later!"];
+    [alert runModal];
+    
+    [self.attachItem setEnabled:YES];
     return;
+  }
   
+  [self inspectWithReveal:debugsession];
+}
+
+- (void)inspectWithReveal:(DBGDebugSession *)debugsession
+{
   if ([debugsession respondsToSelector:@selector(requestPause)]) {
     objc_msgSend(debugsession, @selector(requestPause));
     
@@ -274,6 +286,7 @@
         objc_msgSend(consoleView, @selector(insertNewline:), nil);
         
         [self launchRevealApp];
+        NSLog(@"AttachToLLDB done!");
       } else {
         NSLog(@"(lldb) not found");
         NSAlert *alert = [[NSAlert alloc] init];
@@ -284,7 +297,13 @@
       }
     });
   } else {
-    // wait
+    NSLog(@"Error:if ([debugsession respondsToSelector:@selector(requestPause)]) {");
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"An unexpected error occurred, please try again later!"];
+    [alert runModal];
+    
+    [self.attachItem setEnabled:YES];
+    return;
   }
 }
 
