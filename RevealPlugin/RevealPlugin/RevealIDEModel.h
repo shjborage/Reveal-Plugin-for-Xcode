@@ -10,16 +10,9 @@
 
 @class IDEConsoleTextView;
 
-@interface DBGLLDBLauncher : NSObject
-
-- (void)_executeLLDBCommands:(id)arg1;
-
-@end
-
 @interface DBGDebugSession : NSObject
 
-@property (readonly) DBGLLDBLauncher *launcher;
-
+- (void)requestStop;
 - (void)requestPause;
 - (void)requestContinue;
 

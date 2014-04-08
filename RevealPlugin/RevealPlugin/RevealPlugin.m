@@ -9,7 +9,7 @@
 #import "RevealPlugin.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
-#import "BuildScriptHeader.h"
+#import "RevealScriptHeader.h"
 #import "RevealIDEModel.h"
 
 @interface RevealPlugin ()
@@ -176,17 +176,6 @@
     NSMenuItem *runItem = [productMenuItem.submenu itemWithTitle:@"Run"];
     [self performActionForMenuItem:runItem];
   }
-  
-  // start applescript
-//  NSString *scriptPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"rp.script"];
-//  [kScriptBuild writeToFile:scriptPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-//  if ([scriptPath length] == 0)
-//    return;
-//
-//  NSURL *scriptURL = [NSURL fileURLWithPath:scriptPath];
-//  NSAppleScript *as = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL
-//                                                             error:nil];
-//  [as executeAndReturnError: NULL];
 }
 
 - (void)didPressRevealInspectDebugMenu:(NSMenuItem *)sender
@@ -247,6 +236,20 @@
     return NO;
 }
 
+- (void)launchRevealApp
+{
+  // start applescript to launch Reveal
+  NSString *scriptPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"rp.script"];
+  [kScriptLaunchReveal writeToFile:scriptPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+  if ([scriptPath length] == 0)
+    return;
+  
+  NSURL *scriptURL = [NSURL fileURLWithPath:scriptPath];
+  NSAppleScript *as = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL
+                                                             error:nil];
+  [as executeAndReturnError: NULL];
+}
+
 - (void)pauseExecutionIn
 {
   DBGDebugSession *debugsession = [RevealIDEModel debugSessionIn];
@@ -257,15 +260,7 @@
   if ([debugsession respondsToSelector:@selector(requestPause)]) {
     objc_msgSend(debugsession, @selector(requestPause));
     
-//    if ([debugsession respondsToSelector:@selector(launcher)]) {
-//      DBGLLDBLauncher *launcher = debugsession.launcher;
-//      if ([launcher respondsToSelector:@selector(_executeLLDBCommands:)]) {
-//        [launcher _executeLLDBCommands:@"po"];
-//      }
-//    } else {
-//      // exception
-//    }
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
       IDEConsoleTextView *consoleView = [RevealIDEModel whenXcodeConsoleIn];
       NSString *consoleStr = objc_msgSend(consoleView, @selector(string));
       if (NSNotFound != [consoleStr rangeOfString:@"(lldb)" options:NSBackwardsSearch].location) {
@@ -277,6 +272,15 @@
         
         objc_msgSend(consoleView, @selector(insertText:), @"continue");
         objc_msgSend(consoleView, @selector(insertNewline:), nil);
+        
+        [self launchRevealApp];
+      } else {
+        NSLog(@"(lldb) not found");
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert setMessageText:@"An unexpected error occurred, please try again later!"];
+        [alert runModal];
+        
+        [self.attachItem setEnabled:YES];
       }
     });
   } else {
