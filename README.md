@@ -13,7 +13,7 @@ The Spark Inspector integrates directly into Xcode, so you don't need to add fra
 
 If you're in the middle of a debug session and something unexpected happens, you can attach the Spark Inspector to see what's going on. No restarting your app, no changing your project. All from inside Xcode.
 
-![DebugMenu](https://github.com/shjborage/Reveal-Plugin-for-XCode/raw/master/Product-Debug-AttachToReveal.png)
+![DebugMenu](https://github.com/shjborage/Reveal-Plugin-for-XCode/raw/master/Debug-AttachToReveal.png)
 
 ## Install
 
