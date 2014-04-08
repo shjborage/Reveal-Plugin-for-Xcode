@@ -30,7 +30,7 @@ Simply build the Xcode project and restart Xcode. The plugin will automatically 
 To uninstall, just remove the plugin from the above directory, and restart Xcode:
 
 ```
-rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/KPRunEverywhereXcodePlugin.xcplugin
+rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RevealPlugin.xcplugin
 ```
 
 Tested on Xcode 5.1 and Mac OS X 10.9.2.
