@@ -13,12 +13,10 @@
 		A06A7E6D18E412520039BB1B /* RevealPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A7E6C18E412520039BB1B /* RevealPlugin.m */; };
 		A09434AD18F2E15900AE246C /* NSView+SQDump.m in Sources */ = {isa = PBXBuildFile; fileRef = A09434AC18F2E15900AE246C /* NSView+SQDump.m */; };
 		A09434B018F2E16E00AE246C /* NSView+SQFindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = A09434AF18F2E16E00AE246C /* NSView+SQFindSubView.m */; };
-		B488BB64504A4B39931AFE54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC3B54C1C4664BF51AC76 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C4AC3B54C1C4664BF51AC76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		386551249FEE4E30BF6FE12B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A05281C818EEBB5700F54910 /* RevealIDEModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealIDEModel.h; sourceTree = "<group>"; };
 		A05281C918EEBB5700F54910 /* RevealIDEModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealIDEModel.m; sourceTree = "<group>"; };
 		A06A7E5A18E40D9C0039BB1B /* RevealPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevealPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A06A7E5E18E40D9C0039BB1B /* CoreFoundation.framework in Frameworks */,
-				B488BB64504A4B39931AFE54 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +59,6 @@
 				A06A7E5F18E40D9C0039BB1B /* RevealPlugin */,
 				A06A7E5C18E40D9C0039BB1B /* Frameworks */,
 				A06A7E5B18E40D9C0039BB1B /* Products */,
-				386551249FEE4E30BF6FE12B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,11 +121,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06A7E6818E40D9C0039BB1B /* Build configuration list for PBXNativeTarget "RevealPlugin" */;
 			buildPhases = (
-				1610738086824EED83E81AF5 /* Check Pods Manifest.lock */,
 				A06A7E5618E40D9C0039BB1B /* Sources */,
 				A06A7E5718E40D9C0039BB1B /* Frameworks */,
 				A06A7E5818E40D9C0039BB1B /* Resources */,
-				52405ADC2C3D40DFBE486A80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,39 +170,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1610738086824EED83E81AF5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		52405ADC2C3D40DFBE486A80 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A06A7E5618E40D9C0039BB1B /* Sources */ = {
@@ -308,7 +269,6 @@
 		};
 		A06A7E6918E40D9C0039BB1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 386551249FEE4E30BF6FE12B /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
@@ -333,7 +293,6 @@
 		};
 		A06A7E6A18E40D9C0039BB1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 386551249FEE4E30BF6FE12B /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
