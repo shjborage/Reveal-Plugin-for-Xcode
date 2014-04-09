@@ -35,6 +35,9 @@ rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RevealPlug
 
 Tested on Xcode 5.1 and Mac OS X 10.9.2.
 
+## Issue
+*	When using `Inspect ith Reveal`, if your simulator can't lanuch within 5 seconds, it's will alert an error. Thus, you can alse use Debug->`Attach to Reveal` after your app launched.
+
 ## Contributors
 
 Welcome to fork and PullRequest to do this better.
