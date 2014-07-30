@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) NSMenuItem *revealItem;
 @property (nonatomic, strong) NSMenuItem *attachItem;
+@property (nonatomic, strong) NSString *dyLibPath;
 
 @end
 
@@ -229,11 +230,18 @@
 
 - (BOOL)checkRevealDylib
 {
-  NSString *dylibPath = @"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib";
-  if ([[NSFileManager defaultManager] fileExistsAtPath:dylibPath])
+  NSString *dylibPath1 = @"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib";
+  NSString *dylibPath2 = [@"~/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib" stringByResolvingSymlinksInPath];
+
+  if ([[NSFileManager defaultManager] fileExistsAtPath:dylibPath1]) {
+    self.dyLibPath = dylibPath1;
     return YES;
-  else
+  } else if ([[NSFileManager defaultManager] fileExistsAtPath:dylibPath2]) {
+    self.dyLibPath = dylibPath2;
+    return YES;
+  } else {
     return NO;
+  }
 }
 
 - (void)launchRevealApp
@@ -301,7 +309,8 @@
       IDEConsoleTextView *consoleView = [RevealIDEModel whenXcodeConsoleIn];
       NSString *consoleStr = objc_msgSend(consoleView, @selector(string));
       if (NSNotFound != [consoleStr rangeOfString:@"(lldb)" options:NSBackwardsSearch].location) {
-        objc_msgSend(consoleView, @selector(insertText:), @"expr (void*)dlopen(\"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib\", 0x2);");
+        NSString *loadDyLibExpression = [NSString stringWithFormat:@"expr (void*)dlopen(\"%@\", 0x2);", self.dyLibPath];
+        objc_msgSend(consoleView, @selector(insertText:), loadDyLibExpression);
         objc_msgSend(consoleView, @selector(insertNewline:), nil);
         
         objc_msgSend(consoleView, @selector(insertText:), @"expr [(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@\"IBARevealRequestStart\" object:nil];");
