@@ -1,4 +1,4 @@
-Reveal-Plugin-for-XCode
+Reveal-Plugin-for-Xcode
 =======================
 
 Plugin for Xcode to integrate the Reveal App to your project automatic(Without any modifications to your project).
@@ -7,13 +7,13 @@ Plugin for Xcode to integrate the Reveal App to your project automatic(Without a
 
 **The Reveal Plugin works just like Instruments.**
 
-![ProductMenu](https://github.com/shjborage/Reveal-Plugin-for-XCode/raw/master/Product-InspectWithReveal.png)
+![ProductMenu](https://github.com/shjborage/Reveal-Plugin-for-Xcode/raw/master/Product-InspectWithReveal.png)
 
 The Reveal app integrates directly into Xcode, so you don't need to add frameworks or modify your project to inspect your app in the iOS Simulator.
 
 If you're in the middle of a debug session and something unexpected happens, you can attach Reveal to see what's going on. No restarting your app, no changing your project. All from inside Xcode.
 
-![DebugMenu](https://github.com/shjborage/Reveal-Plugin-for-XCode/raw/master/Debug-AttachToReveal.png)
+![DebugMenu](https://github.com/shjborage/Reveal-Plugin-for-Xcode/raw/master/Debug-AttachToReveal.png)
 
 ## Install
 
