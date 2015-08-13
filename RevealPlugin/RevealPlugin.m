@@ -33,9 +33,9 @@
 
 + (void)pluginDidLoad:(NSBundle *)plugin
 {
-  NSLog(@"Reveal plugin DidLoaded");
   NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
   if ([currentApplicationName isEqual:@"Xcode"]) {
+    NSLog(@"Reveal plugin DidLoaded");
     [self shared];
   }
 }
