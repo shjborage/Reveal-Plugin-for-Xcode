@@ -43,6 +43,10 @@ find ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -name Info.p
 ## Issue
 *	When using `Inspect ith Reveal`, if your simulator can't lanuch within 5 seconds, it's will alert an error. Thus, you can alse use Debug->`Attach to Reveal` after your app launched.
 
+* If the plugin is not successfully loaded, it's possible your Xcode version is not supported, Add the build UUIDs for the versions of Xcode you wish to support to `DVTPlugInCompatibilityUUIDs` in `Info.plist`.
+
+	You can get the UUID with this command `defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID`, run it in termial.
+
 ## Contributors
 
 Welcome to fork and PullRequest to do this better.
