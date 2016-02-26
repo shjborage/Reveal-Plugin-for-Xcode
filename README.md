@@ -1,6 +1,8 @@
 Reveal-Plugin-for-Xcode
 =======================
 
+[![Join the chat at https://gitter.im/shjborage/Reveal-Plugin-for-Xcode](https://badges.gitter.im/shjborage/Reveal-Plugin-for-Xcode.svg)](https://gitter.im/shjborage/Reveal-Plugin-for-Xcode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Plugin for Xcode to integrate the Reveal App to your project automatic(Without any modifications to your project).
 
 ## Introduction
