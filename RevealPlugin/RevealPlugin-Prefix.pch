@@ -6,4 +6,14 @@
 
 #ifdef __OBJC__
   #import <Cocoa/Cocoa.h>
+
+// Close NSLog during Release Mode
+#ifdef DEBUG
+#define NSLog(fmt, ...) do { \
+NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);\
+} while (0);
+#else
+#define NSLog(...) /**/
+#endif
+
 #endif
