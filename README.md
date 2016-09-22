@@ -5,6 +5,8 @@ Reveal-Plugin-for-Xcode
 
 Plugin for Xcode to integrate the Reveal App to your project automatic(Without any modifications to your project).
 
+**Please note that plugins are not supported by Xcode 8. See [Here](https://github.com/alcatraz/Alcatraz/issues/475) for more information.**  
+
 ## Introduction
 
 **The Reveal Plugin works just like Instruments.**
@@ -55,6 +57,6 @@ Welcome to fork and PullRequest to do this better.
 We use issues to manage bugs and enhanced features.
 
 ## Thanks
-	
+
 +	[Integrating Reveal without modifying your Xcode project](http://blog.ittybittyapps.com/blog/2013/11/07/integrating-reveal-without-modifying-your-xcode-project/)
 +	[Xcode 4 插件制作入门](http://onevcat.com/2013/02/xcode-plugin)
